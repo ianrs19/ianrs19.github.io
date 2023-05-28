@@ -123,6 +123,7 @@ nav #active {
     border-bottom: #3a333315 2px solid;
     background-color: white;
     transition: 0.2s all ease;
+    font-size: 13px;
 }
 
 .dropdown-menu a:hover {
