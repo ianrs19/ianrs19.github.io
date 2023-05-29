@@ -276,10 +276,11 @@ main {
     height: fit-content;
     margin: 0 auto;
     background-color: #ffffff;
-    margin-top: 150px;
+    margin-top: 110px;
     flex-direction: row;
     color: white;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 #us #us-info {
@@ -298,6 +299,7 @@ main {
     border-radius: 5px;
     align-self: flex-end;
     justify-content: center;
+    border: 4px rgba(255, 0, 0, 0.347) solid;
 }
 
 #us h2 {
@@ -371,6 +373,7 @@ main {
         display: flex;
         width: 400px;
         height: 340px;
+        top: 50px;
     }
 }
 
@@ -669,6 +672,7 @@ main {
         margin-top: 0px;
         max-width: 100%;
         font-size: 17px;
-
     }
+
+    
 }
