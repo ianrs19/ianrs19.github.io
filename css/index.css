@@ -646,11 +646,8 @@ main {
         height: 400px;
         top: -50px;
         left: 0;
-        margin: 0 auto;
-    }
 
-    #us h2{
-        border-bottom: 2px solid #E04343;
+        margin: 0 auto;
     }
 
     #us #us-info {
@@ -661,7 +658,7 @@ main {
         height: 379px;
         top: -100px;
         padding: 20px 20px;
-        background-color: #ffffff;
+        background-color: #E04343;
         gap: 10px;
         text-align: justify;
         line-height: 1.9;
@@ -673,7 +670,6 @@ main {
         z-index: 11;
         border: 0.1px rgb(255 255 255) solid;
         right: 0;
-        color: #E04343;
     }
 
     #us span {
