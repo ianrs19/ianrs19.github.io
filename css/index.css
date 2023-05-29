@@ -643,7 +643,7 @@ main {
 
     #us img {
         width: 90%;
-        height: 500px;
+        height: 400px;
         top: -50px;
         left: 0;
 
@@ -744,4 +744,10 @@ main {
         #us span {
             display: none;
         }
+
+        #us img{
+            height: 300px;
+        }
     }
+
+    
