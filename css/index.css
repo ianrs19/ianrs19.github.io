@@ -643,9 +643,10 @@ main {
 
     #us img {
         width: 90%;
-        height: 404px;
-        top: 50px;
-        position: static;
+        height: 350px;
+        top: -50px;
+        left: 0;
+
         margin: 0 auto;
     }
 
@@ -667,7 +668,7 @@ main {
         justify-content: center;
         margin: 0 auto;
         z-index: 11;
-        border: 4px rgb(255 255 255) solid;
+        border: 0.1px rgb(255 255 255) solid;
         right: 0;
     }
 
@@ -727,7 +728,7 @@ main {
         }
 
         #us h2{
-            font-size: 16px;
+            font-size: 15px;
         }
 
         #us p{
