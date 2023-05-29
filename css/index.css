@@ -748,6 +748,10 @@ main {
         #us img{
             height: 275px;
         }
+
+        #us {
+            margin-bottom: -91px;
+        }
     }
 
     
