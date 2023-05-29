@@ -350,26 +350,26 @@ main {
     font-size: 15px;
 }
 
-@media (max-width:1168px){
-    #us h2{
+@media (max-width:1168px) {
+    #us h2 {
         font-size: 17px;
     }
 
-    #us p{
+    #us p {
         font-size: 15px;
     }
 
-    #us span{
+    #us span {
         display: none;
     }
 
-    #us a{
+    #us a {
         width: 140px;
         height: 50px;
         font-size: 15px;
     }
-    
-    #us img{
+
+    #us img {
         display: flex;
         width: 400px;
         height: 340px;
@@ -628,51 +628,119 @@ main {
         margin: 0 auto;
     }
 
-}
-
-@media (max-width:600px) {
-    #presentation h1 {
-        display: inline;
-        color: #f1f1f1;
-        font-size: 26px;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-
-    }
-
-    #redirect-principal #presentation p {
-        display: block;
-        font-size: 15px;
-        line-height: 1.8;
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    #redirect-principal #presentation {
+    #us {
         display: flex;
-        gap: 20px;
+        width: 100%;
+        height: fit-content;
+        margin: 0 auto;
+        background-color: #ffffff;
+        margin-top: 110px;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        margin-bottom: 100px;
     }
 
-    #redirect-btns {
+    #us img {
+        width: 90%;
+        height: 404px;
+        top: 50px;
+        position: static;
+        margin: 0 auto;
+    }
+
+    #us #us-info {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        align-self: center;
+        width: 95%;
+        position: relative;
+        height: 379px;
+        top: -100px;
+        padding: 20px 20px;
+        background-color: #E04343;
+        gap: 10px;
+        text-align: justify;
+        line-height: 1.9;
+        list-style: none;
+        border-radius: 5px;
+        align-self: flex-end;
         justify-content: center;
-        margin-top: 2%;
-        gap: 18px;
-        color: white;
+        margin: 0 auto;
+        z-index: 11;
+        border: 4px rgb(255 255 255) solid;
+        right: 0;
     }
 
-    #redirect-principal #redirect1,
-    #redirect-principal #redirect2 {
+    #us span {
+        display: inline;
+    }
+
+    #us a{
         width: 100%;
-        margin-top: 0px;
-        max-width: 100%;
-        font-size: 17px;
     }
-
-    
 }
+
+    /*ESTILOS DE MOVIL*/
+
+    @media (max-width:600px) {
+        #presentation h1 {
+            display: inline;
+            color: #f1f1f1;
+            font-size: 26px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+
+        #redirect-principal #presentation p {
+            display: block;
+            font-size: 15px;
+            line-height: 1.8;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #redirect-principal #presentation {
+            display: flex;
+            gap: 20px;
+        }
+
+        #redirect-btns {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-self: center;
+            justify-content: center;
+            margin-top: 2%;
+            gap: 18px;
+            color: white;
+        }
+
+        #redirect-principal #redirect1,
+        #redirect-principal #redirect2 {
+            width: 100%;
+            margin-top: 0px;
+            max-width: 100%;
+            font-size: 17px;
+        }
+
+        #us h2{
+            font-size: 16px;
+        }
+
+        #us p{
+            font-size: 14px;
+        }
+
+        #us a{
+            margin-top: 10px;
+            height: 50px;
+            font-size: 14px;
+        }
+
+        #us span {
+            display: none;
+        }
+    }
