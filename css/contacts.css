@@ -110,7 +110,7 @@
 
 @media (max-width:900px) {
     .circle-media{
-        width: 65px !important;
-        height: 65px !important;
+        max-width: 65px;
+        max-height: 65px;
     }
 }
