@@ -13,6 +13,7 @@
     height: 300px;
     background-color: #ffffff00 !important; 
     .circle-media:nth-child(n+2), #circle-mail, #circle-call {
+        display: flex;
         opacity: 1 !important;
         width: 70px;
         height: 70px;
@@ -37,9 +38,9 @@
 }
 
 .circle-media:nth-child(n+2){
-    display: flex;
+    display: none;
     width: 0px;
-    height: 70px;
+    height: 0px;
     position: fixed;
     background-color: #1bc4b8f6;
     bottom: 0;
@@ -63,7 +64,7 @@
 }
 
 #contact-media #circle-mail{
-    display: flex;
+    display: none;
     width: 0px;
     height: 70px;
     position: fixed;
@@ -78,7 +79,7 @@
 }
 
 #contact-media #circle-call{
-    display: flex;
+    display: none;
     width: 0px;
     height: 70px;
     position: fixed;
@@ -110,6 +111,8 @@
 
 @media (max-width:900px) {
     .circle-media{
+        width: 60px;
+        height: 60px;
         max-width: 65px;
         max-height: 65px;
     }
