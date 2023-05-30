@@ -115,9 +115,12 @@
 
 @media (max-width:900px) {
     .circle-media {
-        width: 60px;
-        height: 60px;
-        max-width: 60px;
-        max-height: 60px;
+        width: 50px;
+        height: 50px;
+        max-width: 50px;
+        max-height: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 25px !important;
     }
 }
