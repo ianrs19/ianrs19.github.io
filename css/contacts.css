@@ -1,4 +1,4 @@
-#contact-media{
+#contact-media {
     display: flex;
     width: 70px;
     height: 70px;
@@ -9,10 +9,13 @@
     border-radius: 100px;
 }
 
-#contact-media:hover{
+#contact-media:hover {
     height: 300px;
-    background-color: #ffffff00 !important; 
-    .circle-media:nth-child(n+2), #circle-mail, #circle-call {
+    background-color: #ffffff00 !important;
+
+    .circle-media:nth-child(n+2),
+    #circle-mail,
+    #circle-call {
         display: flex;
         opacity: 1 !important;
         width: 70px;
@@ -32,12 +35,12 @@
     border-radius: 100px;
     background-image: url(/assets/img/device-mobile-message.svg);
     background-repeat: no-repeat;
-    background-position: center;   
+    background-position: center;
     background-size: 33px;
     transition: 0.5s all;
 }
 
-.circle-media:nth-child(n+2){
+.circle-media:nth-child(n+2) {
     display: none;
     width: 0px;
     height: 0px;
@@ -52,18 +55,18 @@
     transition: 0.3s all;
     align-items: center;
     background-repeat: no-repeat;
-    background-position: center;   
+    background-position: center;
     background-size: 33px;
     border: 2px solid rgba(255, 255, 255, 0.434);
 }
 
-#contact-media #circle-wp{
+#contact-media #circle-wp {
     background-color: #25D366;
     background-image: url(/assets/img/brand-whatsapp.svg);
 
 }
 
-#contact-media #circle-mail{
+#contact-media #circle-mail {
     display: none;
     width: 0px;
     height: 70px;
@@ -78,7 +81,7 @@
 
 }
 
-#contact-media #circle-call{
+#contact-media #circle-call {
     display: none;
     width: 0px;
     height: 70px;
@@ -92,7 +95,7 @@
     background-image: url(/assets/img/phone-call.svg);
 }
 
-#contact-media a{
+#contact-media a {
     display: block;
     background: rgba(255, 255, 255, 0);
     width: 100%;
@@ -100,17 +103,18 @@
     border-radius: 100px;
 }
 
-#contact-media:hover{
+#contact-media:hover {
     cursor: pointer;
     transition: 0.5s all;
-    #split-contacts{
-        background-color:#666666f6;
+
+    #split-contacts {
+        background-color: #666666f6;
     }
 }
 
 
 @media (max-width:900px) {
-    .circle-media{
+    .circle-media {
         width: 60px;
         height: 60px;
         max-width: 60px;
