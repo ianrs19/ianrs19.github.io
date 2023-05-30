@@ -701,13 +701,12 @@ main {
         position: relative;
         top: 450px;
         z-index: 200;
-        height: 60px;
-        font-weight: 500;
+        height: 70px;
+        font-weight: 800;
     }
 
     #us a:hover{
-        border: 2px solid red;
-        background-color: #2764e8e9;
+        background-color: #1b53cad4;
         color: white;
     }
 }
@@ -790,7 +789,7 @@ main {
 
     @media (max-width:420px){
         #us h2{
-            font-size: 15px;
+            font-size: 14px;
         }
 
         #us img{
