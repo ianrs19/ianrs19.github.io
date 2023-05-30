@@ -654,8 +654,7 @@ main {
         color: #2764e8e9;
         font-size: 20px;
         border-bottom: black solid 2px;
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
         text-align: center;
     }
 
@@ -781,7 +780,6 @@ main {
 
         #us img{
             height: 275px;
-            margin-top: 20px;
         }
 
         #us {
