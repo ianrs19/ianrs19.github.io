@@ -290,7 +290,7 @@ main {
     position: relative;
     height: 450px;
     padding: 3% 50px 3% 190px;
-    background-color: #E04343;
+    background-color: #df2b2bd6;
     right: 60px;
     gap: 10px;
     text-align: justify;
@@ -299,7 +299,6 @@ main {
     border-radius: 10px;
     align-self: flex-end;
     justify-content: center;
-    border: 4px rgba(255, 0, 0, 0.347) solid;
 }
 
 #us h2 {
@@ -379,7 +378,7 @@ main {
 
 
 
-#productos {
+#products {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -709,6 +708,10 @@ main {
         background-color: #1b53cad4;
         color: white;
     }
+
+    #products{
+        margin-top: -100px;
+    }
 }
 
     /*ESTILOS DE MOVIL*/
@@ -785,6 +788,8 @@ main {
             height: fit-content;
             margin-bottom: -115px;
         }
+
+        
     }
 
     @media (max-width:420px){
