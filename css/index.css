@@ -310,6 +310,10 @@ main {
     border-bottom: 2px white solid;
 }
 
+.np{
+    display: none;
+}
+
 #us img {
     display: block;
     width: 40%;
@@ -643,15 +647,17 @@ main {
     #us img {
         width: 90%;
         height: 400px;
-        top: -350px;
+        top: -310px;
         left: 0;
         margin: 0 auto;
         z-index: 111;
     }
+    
+    
 
     #us h2{
         color: #2764e8e9;
-        font-size: 20px;
+        font-size: 23px;
         border-bottom: black solid 2px;
         width: 100%;
         text-align: center;
@@ -761,7 +767,11 @@ main {
         }
 
         #us h2{
-            font-size: 17px;
+            font-size: 18px;
+        }
+
+        .np{
+            display: block;
         }
 
         #us p{
@@ -780,8 +790,9 @@ main {
             display: none;
         }
 
-        #us img{
-            height: 275px;
+        #us img {
+            height: 285px;
+            top: -323px;
         }
 
         #us {
