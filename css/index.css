@@ -5,7 +5,7 @@ header {
     display: flex;
     flex-direction: row;
     padding: 10px 5%;
-    height: 130px;
+    height: 150px;
     border-bottom: 2px #dadada solid;
     position: fixed;
     right: 0;
@@ -163,7 +163,7 @@ main {
     flex-direction: column;
     width: 100%;
     position: relative;
-    top: 80px;
+    top: 100px;
 }
 
 #checkbox {
