@@ -244,9 +244,9 @@ main {
     font-size: 19px;
     color: white;
     transition: 0.2s all;
-    border-radius: 10px;
+    border-radius: 9px;
     border: 2px solid rgba(0, 0, 0, 0.183);
-    max-width: 350px;
+    max-width: 389px;
 }
 
 #redirect-principal #redirect1 {
@@ -404,7 +404,7 @@ footer {
     /* flex-wrap: wrap; */
 }
 
-#foot-divs{
+#foot-divs {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -466,7 +466,7 @@ footer #recruitment p {
     text-align: left;
 }
 
-footer #recruitment a{
+footer #recruitment a {
     color: rgb(0, 166, 255);
 }
 
