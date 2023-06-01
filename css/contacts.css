@@ -63,7 +63,7 @@
 }
 
 #contact-media #circle-wp {
-    background-color: #25D366;
+    background-color: #25d365;
     background-image: url(/assets/img/brand-whatsapp.svg);
     z-index: 1111;
 
@@ -109,6 +109,7 @@
 
 #contact-media:hover {
     cursor: pointer;
+    z-index: 11;
     transition: 0.5s all;
 
     #split-contacts {
