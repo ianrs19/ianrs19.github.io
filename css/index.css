@@ -204,7 +204,7 @@ main {
 #presentation h1 {
     display: inline;
     color: #f1f1f1;
-    font-size: 55px;
+    font-size: 45px;
     font-weight: bolder;
     width: 100%;
     max-width: 915px;
@@ -846,8 +846,8 @@ footer #cto-ways {
     }
 
     footer {
-        height: 454px;
-    }
+        height: 495px;
+    }    
 
     footer span {
         top: 78px;
@@ -857,8 +857,8 @@ footer #cto-ways {
     #foot-divs {
         flex-direction: column;
         padding-bottom: 20px;
-        padding-right: 37px;
         gap: 5px;
+        width: 400px;
     }
 
     footer #ubication,
@@ -868,14 +868,31 @@ footer #cto-ways {
         flex-direction: column;
         padding-left: 0px;
         width: 100%;
+        padding-left: 56px;
     }
 
     footer #cto-ventas {
         display: flex;
         position: relative;
         bottom: 16px;
-        padding-left: 15px;
+        padding-left: 0;
+        padding-right: 13px;
     }
+
+    footer #cto-ways {
+        padding-left: 65px;
+    }
+
+    footer h4 {
+        font-size: 15px;
+    }
+
+    footer span {
+        top: 100px;
+        position: relative;
+    }
+
+
 }
 
 /*ESTILOS DE MOVIL*/
