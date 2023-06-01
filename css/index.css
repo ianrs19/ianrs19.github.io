@@ -1007,64 +1007,40 @@ footer #cto-ways {
     }
 
     footer #recruitment a {
-        color: rgb(0, 166, 255);
         font-size: 12px;
     }
 
     footer h4 {
-        display: block;
         font-size: 13px;
-        font-weight: 700;
         padding-left: 49px;
-        position: relative;
-        bottom: 15px;
     }
 
     footer a {
-        color: white;
         font-size: 13px !important;
     }
 
     footer #ubication, footer #cto-ventas, footer #recruitment {
-        display: flex;
-        flex-direction: column;
-        padding-left: 0px;
         width: 100%;
         padding-left: 13%;
     }
 
     footer img {
-        width: fit-content;
-        position: relative;
-        padding: 10px;
-        border-radius: 100px;
-        background-color: rgba(99, 99, 99, 0.384);
         top: 34px;
         left: -13px;
     }
 
     footer #cto-ventas {
-        display: flex;
-        position: relative;
         bottom: 10px;
-        /* padding-left: 0; */
-        /* padding-right: 8%; */
-        /* padding-left: 0; */
         align-items: flex-start;
     }
 
     footer #cto-ways {
-        /* padding-left: 91px; */
         width: 100%;
     }
     
     footer #cto-ways {
-        display: flex;
         width: 300px;
-        flex-direction: row;
         padding-left: 52px;
-        gap: 10px;
-        position: relative;
         bottom: 5px;
     }
 
@@ -1081,8 +1057,6 @@ footer #cto-ways {
     footer #recruitment a{
         font-size: 13px;
     }
-
-
 }
 
 @media (max-width:390px) {
