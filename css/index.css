@@ -920,6 +920,10 @@ footer #cto-ways {
         margin-top: -100px;
     }
 
+    #type-prods{
+        margin-top: 0;
+    }
+
 
     .type-prod-container {
         margin-top: 30px;
@@ -1044,6 +1048,11 @@ footer #cto-ways {
 
     #products {
         margin-top: 50px;
+    }
+
+    #products #prod-presentation{
+        width: 90%;
+        text-align: justify;
     }
 
     footer span {
