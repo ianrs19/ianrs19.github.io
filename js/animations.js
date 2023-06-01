@@ -58,3 +58,19 @@ dropProd.addEventListener('click', () => {
     enableProdList();
   }
 });
+
+const contenidoDiv = document.getElementById('contact-media');
+const alturaDefinida = 1300; // Altura en píxeles a partir de la cual se oculta el div
+let isVisible = true; // Bandera para controlar la visibilidad del div
+
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset >= alturaDefinida && isVisible) {
+    // El scroll ha alcanzado la altura definida y el div está visible, entonces se oculta
+    contenidoDiv.style.display = 'none';
+    isVisible = false;
+  } else if (window.pageYOffset < alturaDefinida && !isVisible) {
+    // El scroll está por debajo de la altura definida y el div está oculto, entonces se muestra
+    contenidoDiv.style.display = 'block';
+    isVisible = true;
+  }
+});
