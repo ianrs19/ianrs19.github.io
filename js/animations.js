@@ -7,7 +7,6 @@ const typeProdMenu = document.getElementById('prod-types-menu');
 const arrow = document.getElementById('arrow');
 const link = document.querySelector('.navi-item');
 const link2 = document.querySelector('.dropdown-item');
-
 const closeNav = () => {
   navigation.classList.add('disable');
   navigation.classList.remove('enable');
