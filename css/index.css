@@ -730,7 +730,6 @@ footer #cto-ways {
         font-size: 17px;
         line-height: 1.8;
         width: 100%;
-        text-align: center;
         margin: 0 auto;
     }
 
@@ -900,22 +899,12 @@ footer #cto-ways {
 
 @media (max-width:600px) {
     #presentation h1 {
-        display: inline;
-        color: #f1f1f1;
         font-size: 26px;
         width: 100%;
-        margin: 0 auto;
-        text-align: center;
-
     }
 
     #redirect-principal #presentation p {
-        display: block;
-        font-size: 15px;
-        line-height: 1.8;
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
+        text-align: justify;
     }
 
     #redirect-principal #presentation {
