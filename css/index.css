@@ -199,6 +199,7 @@ main {
     gap: 20px;
     box-sizing: border-box;
     justify-content: center;
+    text-align: justify;
 }
 
 #presentation h1 {
@@ -974,6 +975,10 @@ footer #cto-ways {
     #products {
         margin-top: 50px;
     }
+
+    footer span{
+        font-size: 13px;
+    }
 }
 
 @media (max-width:420px) {
@@ -985,14 +990,100 @@ footer #cto-ways {
         margin-top: 0;
     }
 
+    
+
     #products {
         margin-top: 100px;
     }
 }
 
+@media (max-width:420px) {
+    footer #foot-divs{
+        width: 100%;
+    }
+
+    footer #cto-ventas img {
+        left: -14px;
+    }
+
+    footer #recruitment a {
+        color: rgb(0, 166, 255);
+        font-size: 12px;
+    }
+
+    footer h4 {
+        display: block;
+        font-size: 13px;
+        font-weight: 700;
+        padding-left: 49px;
+        position: relative;
+        bottom: 15px;
+    }
+
+    footer a {
+        color: white;
+        font-size: 12px;
+    }
+
+    footer #ubication, footer #cto-ventas, footer #recruitment {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        width: 100%;
+        padding-left: 13%;
+    }
+
+    footer img {
+        width: fit-content;
+        position: relative;
+        padding: 10px;
+        border-radius: 100px;
+        background-color: rgba(99, 99, 99, 0.384);
+        top: 34px;
+        left: -13px;
+    }
+
+    footer #cto-ventas {
+        display: flex;
+        position: relative;
+        bottom: 10px;
+        /* padding-left: 0; */
+        /* padding-right: 8%; */
+        /* padding-left: 0; */
+        align-items: flex-start;
+    }
+
+    footer #cto-ways {
+        /* padding-left: 91px; */
+        width: 100%;
+    }
+    
+    footer #cto-ways {
+        display: flex;
+        width: 300px;
+        flex-direction: row;
+        padding-left: 52px;
+        gap: 10px;
+        position: relative;
+        bottom: 5px;
+    }
+
+    footer span {
+        font-size: 10px;
+    }
+
+    footer #recruitment p {
+        text-align: left;
+        font-size: 12px;
+        max-width: 287px;
+    }
+
+
+}
+
 @media (max-width:390px) {
     #us img {
         margin-top: 0;
-        top: -355px;
+        top: -350px;
     }
 }
