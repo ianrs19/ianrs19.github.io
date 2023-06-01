@@ -231,7 +231,6 @@ main {
     align-self: center;
     justify-content: center;
     margin-top: 2%;
-    gap: 20px;
     color: white;
 }
 
@@ -326,10 +325,11 @@ main {
 }
 
 #us a {
+    font-family: 'Varela Round', sans-serif;
     display: flex;
     color: white;
-    width: 170px;
-    height: 50px;
+    width: 200px;
+    height: 55px;
     border: 1px solid white;
     border-radius: 7px;
     padding: 10px;
@@ -821,9 +821,8 @@ footer #cto-ways {
         top: 450px;
         z-index: 200;
         height: 70px;
-        font-size: 18px;
-        font-weight: 900;
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-family: 'Varela Round', sans-serif;
     }
 
     .nt {
