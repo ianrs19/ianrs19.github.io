@@ -390,15 +390,20 @@ main {
     gap: 10px;
 }
 
-#products h2{
+#products h2 {
     font-weight: 100;
     font-size: 30px;
-    color: #2b70dfd6;
+    color: white;
+    background-color: #2b70dfd6;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 10px;
     height: fit-content;
-}  
+}
 
-#products p{
-    width: 80%;
+#products p {
+    width: 60%;
     line-height: 1.6;
     text-align: center;
     font-size: 16px;
@@ -406,7 +411,7 @@ main {
     font-weight: 100;
 }
 
-#prod-presentation{
+#prod-presentation {
     padding: 5px 0;
 }
 
@@ -422,7 +427,7 @@ main {
     gap: 30px;
 }
 
-.type-prod-container{
+.type-prod-container {
     display: flex;
     flex-direction: column;
     width: 360px;
@@ -432,14 +437,14 @@ main {
     min-width: 310px;
 }
 
-.type-prod-container img{
+.type-prod-container img {
     width: 100%;
     height: 200px;
     border-radius: 9px 9px 0 0;
     border-bottom: 2px solid #2b9adfd6;
 }
 
-.type-prod-container h3{
+.type-prod-container h3 {
     width: 100%;
     font-weight: 100;
     text-align: center;
@@ -447,18 +452,14 @@ main {
     padding: 20px 20px 10px 20px;
 }
 
-.type-prod-container p{
+.type-prod-container p {
     width: 100% !important;
     font-size: 12px !important;
     color: #787878 !important;
 }
 
-.type-prod-container a{
+.type-prod-container a {
     color: rgba(255, 62, 62, 0.847);
-}
-
-.sl{
-    margin-top: 30px;
 }
 
 
@@ -920,13 +921,14 @@ footer #cto-ways {
     }
 
 
-    .type-prod-container{
+    .type-prod-container {
         margin-top: 30px;
     }
+
     footer {
-        
+
         height: 495px;
-    }    
+    }
 
     footer span {
         top: 78px;
@@ -1044,7 +1046,7 @@ footer #cto-ways {
         margin-top: 50px;
     }
 
-    footer span{
+    footer span {
         font-size: 13px;
     }
 }
@@ -1058,7 +1060,7 @@ footer #cto-ways {
         margin-top: 0;
     }
 
-    
+
 
     #products {
         margin-top: 100px;
@@ -1066,7 +1068,7 @@ footer #cto-ways {
 }
 
 @media (max-width:410px) {
-    footer #foot-divs{
+    footer #foot-divs {
         width: 100%;
     }
 
@@ -1087,7 +1089,9 @@ footer #cto-ways {
         font-size: 13px !important;
     }
 
-    footer #ubication, footer #cto-ventas, footer #recruitment {
+    footer #ubication,
+    footer #cto-ventas,
+    footer #recruitment {
         width: 100%;
         padding-left: 13%;
     }
@@ -1105,7 +1109,7 @@ footer #cto-ways {
     footer #cto-ways {
         width: 100%;
     }
-    
+
     footer #cto-ways {
         width: 300px;
         padding-left: 52px;
@@ -1122,7 +1126,7 @@ footer #cto-ways {
         max-width: 280px;
     }
 
-    footer #recruitment a{
+    footer #recruitment a {
         font-size: 13px;
     }
 }
