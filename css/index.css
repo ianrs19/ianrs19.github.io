@@ -410,6 +410,7 @@ footer {
     width: 100%;
     height: 200px;
     align-items: center;
+    justify-content: center;
 }
 
 footer #ubication,
@@ -460,14 +461,18 @@ footer p {
     position: relative;
     bottom: 15px;
     font-size: 16px;
+    font-size: 14px;
 }
 
 footer #recruitment p {
     text-align: left;
+    font-size: 14px;
 }
+
 
 footer #recruitment a {
     color: rgb(0, 166, 255);
+    font-size: 14px;
 }
 
 footer img {
@@ -482,6 +487,7 @@ footer img {
 
 footer a {
     color: white;
+    font-size: 14px;
 }
 
 footer #iqn-logo-footer {
@@ -837,6 +843,38 @@ footer #cto-ways {
 
     #products {
         margin-top: -100px;
+    }
+
+    footer {
+        height: 454px;
+    }
+
+    footer span {
+        top: 78px;
+        position: relative;
+    }
+
+    #foot-divs {
+        flex-direction: column;
+        padding-bottom: 20px;
+        padding-right: 37px;
+        gap: 5px;
+    }
+
+    footer #ubication,
+    footer #cto-ventas,
+    footer #recruitment {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    footer #cto-ventas {
+        display: flex;
+        position: relative;
+        bottom: 16px;
+        padding-left: 15px;
     }
 }
 
