@@ -392,7 +392,7 @@ main {
 
 #products h2{
     font-weight: 100;
-    font-size: 25px;
+    font-size: 30px;
     color: #2b70dfd6;
     height: fit-content;
 }  
@@ -406,15 +406,20 @@ main {
     font-weight: 100;
 }
 
-#type-prods{
+#prod-presentation{
+    padding: 5px 0;
+}
+
+#type-prods {
     display: flex;
     width: 100%;
     height: fit-content;
     margin-top: 25px;
     min-width: 320px;
     padding: 0 8%;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .type-prod-container{
@@ -584,9 +589,6 @@ footer #cto-ways {
 
 
 @media (max-width:1000px) {
-    main {
-        top: 50px;
-    }
 
     header {
         display: flex;
@@ -789,6 +791,10 @@ footer #cto-ways {
         margin: 0 auto;
         text-align: center;
 
+    }
+
+    #redirect-principal {
+        margin-top: 100px;
     }
 
     #redirect-principal #presentation p {
