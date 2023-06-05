@@ -1262,8 +1262,16 @@ footer #cto-ways {
 
 @media (max-width:600px) {
     #presentation h1 {
-        font-size: 26px;
+        font-size: 22px !important;
         width: 100%;
+    }
+
+    #presentation p{
+        font-size: 15px !important;
+    }
+
+    #presentation a{
+        font-size: 15px !important;
     }
 
     #redirect-principal #presentation p {
