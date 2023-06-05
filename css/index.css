@@ -750,6 +750,10 @@ footer a {
     font-size: 14px;
 }
 
+footer a:hover{
+    text-decoration: underline;
+}
+
 footer #iqn-logo-footer {
     margin-left: 200px
 }
