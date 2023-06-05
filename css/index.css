@@ -1363,6 +1363,20 @@ footer #cto-ways {
 }
 
 @media (max-width:410px) {
+
+    #ICD p{
+        font-size: 13px !important;
+    }
+
+    #ICD a{
+        font-size: 13px;
+        width: 90%;
+    }
+
+    #new-bg p, .new p {
+        font-size: 14px !important;
+    }
+
     footer #foot-divs {
         width: 100%;
     }
