@@ -287,7 +287,7 @@ main {
     position: relative;
     height: 450px;
     padding: 3% 50px 3% 190px;
-    background-color: #2b70dfd6;
+    background-color: #2764e8e9;
     right: 60px;
     gap: 10px;
     text-align: justify;
@@ -324,7 +324,6 @@ main {
 }
 
 #us a {
-    font-family: 'Varela Round', sans-serif;
     display: flex;
     color: white;
     width: 200px;
@@ -339,7 +338,7 @@ main {
 }
 
 #us a:hover {
-    color: #2b70dfd6;
+    color: #2764e8e9;
     background-color: white;
     transition: 0.5s all;
     border: 2px solid #ff000000;
@@ -394,7 +393,7 @@ main {
     font-weight: 100;
     font-size: 30px;
     color: white;
-    background-color: #2b70dfd6;
+    background-color: #2764e8e9;
     width: 100%;
     text-align: center;
     padding: 20px 0;
@@ -660,8 +659,7 @@ footer {
     color: #ffffff;
     border: 0 solid red;
     justify-content: center;
-    /* flex-wrap: wrap; */
-    margin-top: 200px;
+    margin-top: 80px;
 }
 
 #foot-divs {
@@ -1107,8 +1105,20 @@ footer #cto-ways {
         border: 1px solid #2764e8e9;
     }
 
+    #products h2{
+        font-size: 19px;
+    }
+
     #products {
         margin-top: -100px;
+    }
+
+    #products #prod-presentation {
+        font-size: 16px;
+        width: 80%;
+        text-align: justify;
+        line-height: 1.8;
+        color: #444444 !important;
     }
 
     #type-prods {
@@ -1150,6 +1160,10 @@ footer #cto-ways {
 
     #ICD img {
         width: 70%;
+    }
+
+    #ICD a{
+        font-size: 15px;
     }
 
 
@@ -1307,12 +1321,15 @@ footer #cto-ways {
     }
 
     #products {
-        margin-top: 50px;
+        margin-top: 90px;
     }
 
     #products #prod-presentation {
-        width: 90%;
+        font-size: 14px;
+        width: 80%;
         text-align: justify;
+        line-height: 1.9;
+        color: #444444 !important;
     }
 
     #ICD img {

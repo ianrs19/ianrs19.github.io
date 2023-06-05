@@ -59,7 +59,7 @@ dropProd.addEventListener('click', () => {
 });
 
 const contenidoDiv = document.getElementById('contact-media');
-const alturaDefinida = 1300; // Altura en píxeles a partir de la cual se oculta el div
+const alturaDefinida = 2400; // Altura en píxeles a partir de la cual se oculta el div
 let isVisible = true; // Bandera para controlar la visibilidad del div
 
 window.addEventListener('scroll', function () {
