@@ -1196,6 +1196,7 @@ footer #cto-ways {
 
     #news h2 {
         width: 100%;
+        border-bottom: 0px solid red;
     }
 
     #news #w-news {
