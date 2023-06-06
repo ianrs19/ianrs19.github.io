@@ -121,7 +121,7 @@ nav .dropdown-toggle {
     text-decoration: none;
 }
 
-nav #active {
+nav .active {
     color: #4c6ddae9;
 }
 
