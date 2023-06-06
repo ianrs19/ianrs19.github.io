@@ -78,7 +78,7 @@ $(document).ready(function () {
 
 	// FILTRANDO PRODUCTOS FARMACEUTICOS ============================================
 
-	$('#p-psc').click(function () {
+	$('#p-farma').click(function () {
 		var catProduct = $(this).attr('category');
 		console.log(catProduct);
 
@@ -120,6 +120,29 @@ $(document).ready(function () {
 		function showProduct() {
 			$('.product-item[category5="' + catProduct + '"]').show();
 			$('.product-item[category5="' + catProduct + '"]').css('transform', 'scale(1)');
+		} setTimeout(showProduct, 400);
+	});
+
+	// FILTRANDO PRODUCTOS INDUSTRIALES ============================================
+
+	$('#p-psc').click(function () {
+		var catProduct = $(this).attr('category');
+		console.log(catProduct);
+
+		// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO
+		$('.category_item').removeClass('ct_item-active');
+		$(this).addClass('ct_item-active');
+
+		// OCULTANDO PRODUCTOS =========================
+		$('.product-item').css('transform', 'scale(0)');
+		function hideProduct() {
+			$('.product-item').hide();
+		} setTimeout(hideProduct, 400);
+
+		// MOSTRANDO PRODUCTOS =========================
+		function showProduct() {
+			$('.product-item[category6="' + catProduct + '"]').show();
+			$('.product-item[category6="' + catProduct + '"]').css('transform', 'scale(1)');
 		} setTimeout(showProduct, 400);
 	});
 

@@ -72,46 +72,52 @@
         </nav>
     </header>
 
-    <div id="searchContainer">
-        <input type="text" id="searchInput" placeholder="Buscar en todas las categorías..." data->
-        <button id="searchButton">Buscar</button>
-    </div>
+    <aside>
 
-    <section id="products-container">
-        <div class="store-wrapper">
-            <div class="category_list">
-                <span id="all-prods" class="category_item" category="all">Todas las Categorías</span>
-                <span id="p-agri" class="category_item" category="agrícolas">Productos Agricolas</span>
-                <span id="p-ali" class="category_item" category="alimentarios">Productos Alimentarios</span>
-                <span id="p-cos" class="category_item" category="cosméticos">Productos Cosméticos</span>
-                <span id="p-farma" class="category_item" category="farmacéuticos">Productos Farmacéuticos</span>
-                <span id="p-ind" class="category_item" category="industriales">Productos Industriales</span>
-                <span id="p-psc" class="category_item" category="piscinas">Productos para Piscinas</span>
-            </div>
+    </aside>
 
-            <section class="products-list">
-                <div class="product-item" category="all" category1="agrícolas" category3="cosméticos" category4="farmacéuticos" category5="industriales">
-                    <img src="assets/img/laptop_hp.jpg" alt="">
-                    <a href="#">sexo salvaje</a>
-                </div>
-
-                <div class="product-item" category="all" category1="agrícolas">
-                    <img src="assets/img/pc_lenovo.jpg" alt="">
-                    <a href="#">Laptop Hp</a>
-                </div>
-
-                <div class="product-item" category="all" category5="industriales">
-                    <img src="assets/img/monitor_asus.jpg" alt="">
-                    <a href="#">malparido</a>
-                </div>
-                <div class="product-item" category="all">
-                    <img src="assets/img/samsung_galaxy.jpg" alt="">
-                    <a href="#">Laptop Hp</a>
-                </div>
-
-            </section>
+    <main>
+        <div id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Ej: Hipoclorito de Sodio" data->
+            <button id="searchButton">Buscar</button>
         </div>
-    </section>
+
+        <section id="products-container">
+            <div class="store-wrapper">
+                <div class="category_list">
+                    <span id="all-prods" class="category_item" category="all">Todas las Categorías</span>
+                    <span id="p-agri" class="category_item" category="agrícolas">Productos Agricolas</span>
+                    <span id="p-ali" class="category_item" category="alimentarios">Productos Alimentarios</span>
+                    <span id="p-cos" class="category_item" category="cosméticos">Productos Cosméticos</span>
+                    <span id="p-farma" class="category_item" category="farmacéuticos">Productos Farmacéuticos</span>
+                    <span id="p-ind" class="category_item" category="industriales">Productos Industriales</span>
+                    <span id="p-psc" class="category_item" category="piscinas">Productos para Piscinas</span>
+                </div>
+
+                <section class="products-list">
+                    <div class="product-item" category="all" category1="agrícolas" category3="cosméticos"
+                        category4="farmacéuticos" category5="industriales">
+                        <img src="assets/img/laptop_hp.jpg" alt="">
+                        <a href="#">sexo salvaje</a>
+                    </div>
+
+                    <div class="product-item" category="all" category1="agrícolas" category4="farmacéuticos">
+                        <img src="assets/img/pc_lenovo.jpg" alt="">
+                        <a href="#">Laptop Hp</a>
+                    </div>
+
+                    <div class="product-item" category="all" category4="farmacéuticos" category5="industriales">
+                        <img src="assets/img/monitor_asus.jpg" alt="">
+                        <a href="#">Hipoclorito de Sodio</a>
+                    </div>
+                    <div class="product-item" category="all" category4="farmacéuticos">
+                        <img src="assets/img/samsung_galaxy.jpg" alt="">
+                        <a href="#">Laptop Hp</a>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
 
 
 
