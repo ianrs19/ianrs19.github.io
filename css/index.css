@@ -656,7 +656,7 @@
     }
 
     #ICD a {
-        width: 70%;
+        width: 90%;
     }
 
     #ICD p {
@@ -810,6 +810,11 @@
     #us p {
         font-size: 13px;
         top: 310px;
+    }
+
+    #us img {
+        margin-top: 0;
+        top: -340px;
     }
 
     #us a {
