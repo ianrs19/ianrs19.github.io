@@ -20,7 +20,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&family=Varela+Round&display=swap');
     </style>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/products.css">
     <link rel="stylesheet" href="/css/general.css">
     <link rel="stylesheet" href="/css/contacts.css">
     <script>
@@ -47,11 +47,12 @@
             <ul id="ul-navigation" class="disable">
                 <li class="navi-item"><a href="/index.html">Inicio</a></li>
                 <div class="dropdown">
-                    <button itemid="drop-productos" class="dropdown-toggle active" id="dropdownMenuButton">Productos<span
-                            id="icon-drop-prod" class="inactive-prod-list"><svg id="arrow" class="arrow-enable"
-                                xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down"
-                                width="18" height="20" viewBox="0 0 24 22" stroke-width="3.7" stroke="#4c6ddae9"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <button itemid="drop-productos" class="dropdown-toggle active"
+                        id="dropdownMenuButton">Productos<span id="icon-drop-prod" class="inactive-prod-list"><svg
+                                id="arrow" class="arrow-enable" xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-chevron-down" width="18" height="20"
+                                viewBox="0 0 24 22" stroke-width="3.7" stroke="#4c6ddae9" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M6 9l6 6l6 -6" />
                             </svg></span></button>
@@ -71,7 +72,46 @@
         </nav>
     </header>
 
+    <div id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Buscar en todas las categorías..." data->
+        <button id="searchButton">Buscar</button>
+    </div>
 
+    <section id="products-container">
+        <div class="store-wrapper">
+            <div class="category_list">
+                <span id="all-prods" class="category_item" category="all">Todas las Categorías</span>
+                <span id="p-agri" class="category_item" category="agrícolas">Productos Agricolas</span>
+                <span id="p-ali" class="category_item" category="alimentarios">Productos Alimentarios</span>
+                <span id="p-cos" class="category_item" category="cosméticos">Productos Cosméticos</span>
+                <span id="p-farma" class="category_item" category="farmacéuticos">Productos Farmacéuticos</span>
+                <span id="p-ind" class="category_item" category="industriales">Productos Industriales</span>
+                <span id="p-psc" class="category_item" category="piscinas">Productos para Piscinas</span>
+            </div>
+
+            <section class="products-list">
+                <div class="product-item" category="all" category1="agrícolas" category3="cosméticos" category4="farmacéuticos" category5="industriales">
+                    <img src="assets/img/laptop_hp.jpg" alt="">
+                    <a href="#">sexo salvaje</a>
+                </div>
+
+                <div class="product-item" category="all" category1="agrícolas">
+                    <img src="assets/img/pc_lenovo.jpg" alt="">
+                    <a href="#">Laptop Hp</a>
+                </div>
+
+                <div class="product-item" category="all" category5="industriales">
+                    <img src="assets/img/monitor_asus.jpg" alt="">
+                    <a href="#">malparido</a>
+                </div>
+                <div class="product-item" category="all">
+                    <img src="assets/img/samsung_galaxy.jpg" alt="">
+                    <a href="#">Laptop Hp</a>
+                </div>
+
+            </section>
+        </div>
+    </section>
 
 
 
@@ -88,9 +128,9 @@
 
 
     <main class="page">
-        
+
     </main>
-    
+
 
 
 
@@ -139,13 +179,16 @@
         <span class="copyright">Importadora Química del Norte S.A. <b> - © 2023 Copyright</b> </span>
     </footer>
 
+    <script src="/js/animations.js"></script>
+    <script src="/js/jquery-3.2.1.js"></script>
+    <script src="/js/market.js"></script>
+    <script src="/js/search.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             disable: 'mobile'
         });
     </script>
-    <script src="/js/animations.js"></script>
 </body>
 
 </html>
