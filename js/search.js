@@ -12,8 +12,17 @@ const cos = document.getElementById('p-cos');
 // Registrar los nombres de los productos mostrados
 const shownProductNames = [];
 
-// Agregar evento de clic al botón de búsqueda
-searchButton.addEventListener('click', function () {
+// Agregar evento click al botón de búsqueda
+searchButton.addEventListener('click', searchProducts);
+
+// Agregar evento keydown al campo de entrada
+searchInput.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        searchProducts();
+    }
+});
+
+function searchProducts() {
     const searchTerm = searchInput.value.toLowerCase(); // Obtener el valor del campo de entrada y convertirlo a minúsculas
 
     // Limpiar los registros de nombres de productos mostrados
@@ -32,7 +41,8 @@ searchButton.addEventListener('click', function () {
 
         // Mostrar u ocultar productos según el término de búsqueda
         if ((productName.includes(searchTerm) || searchTerm === '') && !shownProductNames.includes(productName)) {
-            productItems[i].style.display = 'block'; // Mostrar producto
+            searchInput.value = "";
+            productItems[i].style.display = 'flex'; // Mostrar producto
             productItems[i].style.transform = 'scale(0)'; // Establecer escala inicial a 0
             productItems[i].style.transition = 'transform 400ms'; // Establecer duración de la transición
 
@@ -45,4 +55,5 @@ searchButton.addEventListener('click', function () {
             productItems[i].style.display = 'none'; // Ocultar producto
         }
     }
-});
+}
+
