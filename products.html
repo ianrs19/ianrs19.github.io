@@ -33,7 +33,7 @@
 
 <body>
     <header style="position: absolute;">
-        <a id="home" href="https://ianrs19.github.io/products.html">
+        <a id="home" href="https://ianrs19.github.io/">
             <img src="assets/img/iqn-logo.jpg" alt="Logo de la empresa Importadora Química Del Norte S.A"
                 title="Logo de Importadora Química S.A">
         </a>
@@ -79,8 +79,8 @@
                 <button id="searchButton"><img src="/assets/img/search-icon.svg" alt=""></button>
             </div>
             <p>Filtros por Categoria</p>
-            <div class="store-wrapper">
-                <div class="category_list">
+            <div  id="cat_list" class="store-wrapper">
+                <div id="cat-cont" class="category_list">
                     <span id="all-prods" class="category_item" category="all">Todas las Categorías</span>
                     <span id="p-agri" class="category_item" category="agrícolas">Productos Agricolas</span>
                     <span id="p-ali" class="category_item" category="alimentarios">Productos Alimentarios</span>
@@ -89,50 +89,23 @@
                     <span id="p-ind" class="category_item" category="industriales">Productos Industriales</span>
                     <span id="p-psc" class="category_item" category="piscinas">Productos para Piscinas</span>
                 </div>
+            </div>
+            <span id="op-cl-catlist"><img id="arrowCategories" src="/assets/img/arrowCategories.svg" alt=""></span>
         </aside>
 
         <section id="products-container">
             <section class="products-list">
-                <div class="product-item" category="all" category1="agrícolas" category3="cosméticos"
-                    category4="farmacéuticos" category5="industriales">
-                    <img src="assets/img/prueba-productos.jpg" alt="">
-                    <a href="#">Aceite Mineral</a>
-                </div>
-                <div class="product-item" category="all" category1="agrícolas" category3="cosméticos"
-                    category4="farmacéuticos" category5="industriales">
-                    <img src="assets/img/prueba-productos.jpg" alt="">
-                    <a href="#">Aceite Mineral</a>
-                </div>
-                <div class="product-item" category="all" category1="agrícolas" category3="cosméticos"
-                    category4="farmacéuticos" category5="industriales">
-                    <img src="assets/img/prueba-productos.jpg" alt="">
-                    <a href="#">Aceite Mineral</a>
-                </div>
-                <div class="product-item" category="all" category1="agrícolas" category3="cosméticos"
-                    category4="farmacéuticos" category5="industriales">
-                    <img src="assets/img/prueba-productos.jpg" alt="">
-                    <a href="#">Aceite Mineral</a>
-                </div>
-                <div class="product-item" category="all" category1="agrícolas" category3="cosméticos"
-                    category4="farmacéuticos" category5="industriales">
-                    <img src="assets/img/prueba-productos.jpg" alt="">
-                    <a href="#">Aceite Mineral</a>
-                </div>
-
 
                 <div class="product-item" category="all" category1="agrícolas" category4="farmacéuticos">
                     <img src="assets/img/prueba-productos.jpg" alt="">
-                    <a href="#">Acetona</a>
+                    <div class="prod-attr-list">
+                        <div class="prod-title" href="#">Aceite Mineral</div>
+                        <div class="prod-presentation"></div>
+                        <div class="prod-grade"></div>
+                        <div class="prod-category"></div>
+                    </div>
                 </div>
 
-                <div class="product-item" category="all" category4="farmacéuticos" category5="industriales">
-                    <img src="assets/img/prueba-productos.jpg" alt="">
-                    <a href="#">Hipoclorito de Sodio</a>
-                </div>
-                <div class="product-item" category="all" category4="farmacéuticos">
-                    <img src="assets/img/prueba-productos.jpg" alt="">
-                    <a href="#">Acido Fosforoso</a>
-                </div>
             </section>
             </div>
         </section>

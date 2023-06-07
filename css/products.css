@@ -1,11 +1,11 @@
-main{
+main {
     display: flex;
     width: 100%;
     flex-direction: row !important;
     height: fit-content;
 }
 
-aside{
+aside {
     display: flex;
     flex-direction: column;
     width: 450px;
@@ -33,7 +33,7 @@ aside p {
     justify-content: center;
     width: 100%;
     display: flex;
-    
+
 }
 
 #searchInput {
@@ -43,14 +43,14 @@ aside p {
     border: 1px solid #2764e8;
     outline: 0;
     background-color: rgba(255, 255, 255, 0.048);
-    color: rgb(95,95, 95);
+    color: rgb(95, 95, 95);
     font-weight: 400;
     backdrop-filter: blur(10px);
     min-height: 41px;
 }
 
 #searchInput::placeholder {
-    color: rgb(95,95, 95);
+    color: rgb(95, 95, 95);
 }
 
 #searchButton {
@@ -85,7 +85,8 @@ aside p {
 .store-wrapper {
     display: flex;
     width: 100%;
-    flex-direction: column;   
+    flex-direction: column;
+    transition: 0.4s all;
 }
 
 .category_list {
@@ -95,7 +96,7 @@ aside p {
     align-items: center;
     justify-content: center;
     padding: 0 10px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    height: fit-content;
 }
 
 .category_list .category_item {
@@ -151,15 +152,33 @@ aside p {
     width: 160px;
 }
 
-.products-list .product-item a {
+.products-list .product-item .prod-title {
     display: block;
     width: 100%;
     padding: 8px 0;
     background: #2D3E50;
     color: #fff;
     text-align: center;
-    text-decoration: none;
+    cursor: zoom-in;
 }
+
+.prod-attr-list {
+    display: flex;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    height: fit-content;
+    transition: 0.4s all;
+    flex-direction: column;
+}
+
+#op-cl-catlist{
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+}
+
+
 
 @media screen and (max-width: 1000px) {
     .products-list .product-item {
@@ -179,6 +198,7 @@ aside p {
         flex-wrap: wrap;
         height: fit-content;
         padding: 0 15px;
+        margin-top: 104px;
     }
 
     #products-container {
@@ -197,6 +217,46 @@ aside p {
         width: 100%;
         display: flex;
     }
+
+    .list-closed{
+        height: fit-content;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .list-opened{
+        height: fit-content;
+    }
+
+    #arrowCategories{
+        transition: 0.1s all;
+        transform: rotate(0deg);
+    }
+
+    aside p {
+        width: 88%;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 18px;
+        color: #838383;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #2764e8e9;
+        font-weight: 700;
+        border-radius: 0px !important;
+    }
+
+    #op-cl-catlist {
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        padding: 10px 0;
+        width: 100%;
+        background-color: #2764e8e9;
+        width: 88%;
+        /* border-bottom-right-radius: 11px; */
+        /* border-bottom-left-radius: 11px; */
+        position: relative;
+    }
+
 }
 
 
@@ -204,13 +264,18 @@ aside p {
 /* RESPONSIVE */
 
 @media screen and (max-width: 700px) {
-    main{
+    main {
         flex-direction: column !important;
     }
 
-    aside{
+    aside {
         width: 100%;
     }
 
-    
+    .products-list {
+        padding: 0 25px;
+        margin-top: 10px;
+    }
+
+
 }

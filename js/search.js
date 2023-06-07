@@ -8,6 +8,38 @@ const ind = document.getElementById('p-ind');
 const ali = document.getElementById('p-ali');
 const agri = document.getElementById('p-agri');
 const cos = document.getElementById('p-cos');
+const catToggle = document.getElementById('op-cl-catlist');
+const catList = document.getElementById('cat_list');
+const catContainer = document.getElementById('cat-cont');
+const arrowCategories = document.getElementById('arrowCategories');
+var opened = 0; // Esta cerrada por defecto
+catList.classList.add('list-closed');
+catContainer.style.height = '0';
+
+const opOrCloseList = () => {
+    if (opened === 0) {
+        arrowCategories.style.transform = 'rotate(180deg)';
+        catList.classList.remove('list-closed');
+        catList.classList.add('list-opened');
+        catContainer.style.height = 'fit-content';
+        catToggle.style.bottom = '0';
+        opened = 1; // Actualiza el estado a "abierta"
+    } else {
+        arrowCategories.style.transform = 'rotate(0deg)';
+        catContainer.style.height = '0';
+        catList.classList.add('list-closed');
+        catList.classList.remove('list-opened');
+        catToggle.style.bottom = '20px';
+        opened = 0; // Actualiza el estado a "cerrada"
+    }
+};
+
+catToggle.addEventListener('click', () => {
+    if (window.innerWidth <= 1000) {
+        opOrCloseList();
+    }
+});
+
 
 // Registrar los nombres de los productos mostrados
 const shownProductNames = [];
