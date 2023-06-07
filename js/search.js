@@ -13,8 +13,11 @@ const catList = document.getElementById('cat_list');
 const catContainer = document.getElementById('cat-cont');
 const arrowCategories = document.getElementById('arrowCategories');
 var opened = 0; // Esta cerrada por defecto
-catList.classList.add('list-closed');
-catContainer.style.height = '0';
+
+if (window.innerWidth <= 1000) {
+    catList.classList.add('list-closed');
+    catContainer.style.height = '0';
+}
 
 const opOrCloseList = () => {
     if (opened === 0) {
