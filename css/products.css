@@ -151,7 +151,7 @@ aside p {
     width: 160px;
 }
 
-.prod.help-icon{
+.products-list .product-item .prod-title img{
     display: none !important;
 }
 
@@ -163,7 +163,6 @@ aside p {
     background: #2D3E50;
     color: #fff;
     text-align: center;
-    cursor: pointer;
     height: 40px;
     justify-content: center;
     align-items: center;
@@ -324,6 +323,10 @@ aside p {
 
     .prod-attr-list{
         display: none;
+    }
+
+    .products-list .product-item .prod-title img{
+        display: flex !important;
     }
 }
 
