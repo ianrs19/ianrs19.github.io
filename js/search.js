@@ -57,15 +57,20 @@ searchInput.addEventListener('keydown', function (event) {
     }
 });
 
+// Función de normalización de caracteres con tilde
+function normalizeString(string) {
+    return string.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
 function searchProducts() {
-    const searchTerm = searchInput.value.toLowerCase(); // Obtener el valor del campo de entrada y convertirlo a minúsculas
+    const searchTerm = normalizeString(searchInput.value.toLowerCase()); // Normalizar y convertir el valor del campo de entrada a minúsculas
 
     // Limpiar los registros de nombres de productos mostrados
     shownProductNames.length = 0;
 
     // Iterar sobre los productos y mostrar u ocultar según el término de búsqueda
     for (let i = 0; i < productItems.length; i++) {
-        const productName = productItems[i].querySelector('div').textContent.toLowerCase(); // Obtener el nombre del producto y convertirlo a minúsculas
+        const productName = normalizeString(productItems[i].querySelector('div').textContent.toLowerCase()); // Normalizar y convertir el nombre del producto a minúsculas
 
         all.classList.add('ct_item-active');
         farm.classList.remove('ct_item-active');
