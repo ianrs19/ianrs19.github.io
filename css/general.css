@@ -1,63 +1,89 @@
-
+@font-face {
+    font-family: 'Varela Round';
+    src: url('/assets/fonts/VarelaRound-Regular.ttf') format('truetype');
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ REBOOT ]*/
-*, *:before, *:after {
-	margin: 0px; 
-	padding: 0px; 
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	font-family: 'Varela Round', sans-serif;
+*,
+*:before,
+*:after {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
 }
 
-body, html {
-	font-family: Arial, sans-serif;
-	font-size: 15px;
-	height: 100%;
-	background-color: #fff;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+body,
+html {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    height: 100%;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /*---------------------------------------------*/
-a:focus {outline: none;}
-a:hover {text-decoration: none;}
+a:focus {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
 
 /* ------------------------------------ */
-h1,h2,h3,h4,h5,h6,p {margin: 0px;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
 
-ul, li, a{
-	margin: 0px;
-	list-style-type: none;
+ul,
+li,
+a {
+    margin: 0px;
+    list-style-type: none;
     list-style: none;
     text-decoration: none;
 }
 
 
 /* ------------------------------------ */
-input, textarea, label {
-	display: block;
-	outline: none;
-	border: none;
+input,
+textarea,
+label {
+    display: block;
+    outline: none;
+    border: none;
 }
 
 /* ------------------------------------ */
 button {
-	outline: none;
-	border: none;
-	background: transparent;
-	cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
-button:focus {outline: none;}
 
-iframe {border: none;}
+button:focus {
+    outline: none;
+}
 
+iframe {
+    border: none;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&family=Varela+Round&display=swap');
 
 /* ESTILOS DEL MAIN DEL HEADER DE LA PAGINA */
 header {
@@ -331,7 +357,7 @@ footer a {
     font-size: 14px;
 }
 
-footer a:hover{
+footer a:hover {
     text-decoration: underline;
 }
 
@@ -570,7 +596,7 @@ footer #cto-ways {
         width: 400px;
     }
 
-    
+
     footer #ubication,
     footer #cto-ventas,
     footer #recruitment {
@@ -591,7 +617,7 @@ footer #cto-ways {
 
     footer #cto-ways {
         padding-left: 65px;
-    } 
+    }
 
     footer h4 {
         font-size: 15px;
