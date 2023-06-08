@@ -102,18 +102,18 @@ function searchProducts() {
 
 // Obtener elementos del DOM para la muestra de la descripcion del producto seleccionado
 if (window.innerWidth <= 850) {
-    const prodTitles = document.querySelectorAll('.prod-title');
-    prodTitles.forEach(function (prodTitle) {
-        prodTitle.addEventListener('click', function () {
-            const prodAttrList = this.nextElementSibling;
+  const prodTitles = document.querySelectorAll('.prod-title');
+  prodTitles.forEach(function (prodTitle) {
+    prodTitle.addEventListener('click', function () {
+      const prodAttrList = this.nextElementSibling;
 
-            if (prodAttrList.style.display === 'flex') {
-                prodAttrList.style.display = 'none';
-            } else {
-                prodAttrList.style.display = 'flex';
-            }
-        });
+      if (prodAttrList.style.display === 'flex') {
+        prodAttrList.style.display = 'none';
+      } else {
+        prodAttrList.style.display = 'flex';
+      }
     });
+  });
 }
 
 
