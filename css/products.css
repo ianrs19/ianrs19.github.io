@@ -151,7 +151,7 @@ aside p {
     width: 160px;
 }
 
-.products-list .product-item .prod-title img{
+.products-list .product-item .prod-title img {
     display: none !important;
 }
 
@@ -169,7 +169,7 @@ aside p {
     gap: 5px;
 }
 
-.prod-title img{
+.prod-title img {
     display: flex;
     height: 100%;
     width: 20px !important;
@@ -191,30 +191,32 @@ aside p {
     padding: 0 15px;
 }
 
-.prod-presentation, .prod-grade, .prod-category{
+.prod-presentation,
+.prod-grade,
+.prod-category {
     font-size: 14px;
     color: #6f6f6f;
 }
 
-.prod-attr-list:first-child{
+.prod-attr-list:first-child {
     padding-top: 10px !important;
 }
 
-.prod-destitle{
+.prod-destitle {
     padding-top: 20px;
     padding-bottom: 5px;
     font-weight: 700;
 }
 
-.prod-category{
+.prod-category {
     line-height: 1.8;
     padding-bottom: 15px;
 }
 
-#op-cl-catlist{
-        display: flex;
-        justify-content: center;
-        height: fit-content;
+#op-cl-catlist {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
 }
 
 
@@ -258,16 +260,16 @@ aside p {
         display: flex;
     }
 
-    .list-closed{
+    .list-closed {
         height: fit-content;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    .list-opened{
+    .list-opened {
         height: fit-content;
     }
 
-    #arrowCategories{
+    #arrowCategories {
         transition: 0.1s all;
         transform: rotate(0deg);
     }
@@ -323,27 +325,42 @@ aside p {
         width: 160px;
     }
 
-    .prod-attr-list{
+    .prod-attr-list {
         display: none;
     }
 
-    .products-list .product-item .prod-title img{
+    .products-list .product-item .prod-title img {
         display: flex !important;
     }
 
-    .products-list .product-item .prod-title{
+    .products-list .product-item .prod-title {
         cursor: pointer;
+    }
+
+    .category_list .category_item {
+        display: block;
+        width: 92%;
+        padding: 12px 0;
+        margin-bottom: 20px;
+        background: #4b5d70;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        border-bottom-right-radius: 6px;
+        transition: 0.2s all;
+        margin-bottom: 12px;
     }
 }
 
 @media screen and (max-width: 450px) {
     .products-list {
-       display: flex;
-       flex-direction: column;
-       width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
-    .product-item{
+    .product-item {
         width: 100% !important;
         margin: 0 !important;
         margin-bottom: 30px !important;
