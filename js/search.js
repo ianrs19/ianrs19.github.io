@@ -97,14 +97,17 @@ function searchProducts() {
 // Obtener elementos del DOM para la muestra de la descripcion del producto seleccionado
 if (window.innerWidth <= 850) {
     const prodTitles = document.querySelectorAll('.prod-title');
+    const prodsIcon = document.querySelectorAll('.help-icon');
 
-    prodTitles.forEach(function(prodTitle) {
-        prodTitle.addEventListener('click', function() {
+    prodTitles.forEach(function (prodTitle) {
+        prodTitle.addEventListener('click', function () {
             var prodAttrList = this.nextElementSibling;
             if (prodAttrList.style.display === 'none') {
                 prodAttrList.style.display = 'flex';
+                prodsIcon.src = '/assets/img/icons/arrows-minimize.svg';
             } else {
                 prodAttrList.style.display = 'none';
+                prodsIcon.src = '/assets/img/icons/zoom-in.svg';
             }
         });
     });
