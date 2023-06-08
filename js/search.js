@@ -12,6 +12,7 @@ const catToggle = document.getElementById('op-cl-catlist');
 const catList = document.getElementById('cat_list');
 const catContainer = document.getElementById('cat-cont');
 const arrowCategories = document.getElementById('arrowCategories');
+const prodTitles = document.querySelectorAll('.prod-title');
 var opened = 0; // Esta cerrada por defecto
 
 if (window.innerWidth <= 1000) {
@@ -101,18 +102,14 @@ function searchProducts() {
 
 // Obtener elementos del DOM para la muestra de la descripcion del producto seleccionado
 if (window.innerWidth <= 850) {
-    const prodTitles = document.querySelectorAll('.prod-title');
-    const prodsIcon = document.querySelectorAll('.help-icon');
-
+    
     prodTitles.forEach(function (prodTitle) {
         prodTitle.addEventListener('click', function () {
             var prodAttrList = this.nextElementSibling;
             if (prodAttrList.style.display === 'none') {
                 prodAttrList.style.display = 'flex';
-                prodsIcon.src = '/assets/img/icons/arrows-minimize.svg';
             } else {
                 prodAttrList.style.display = 'none';
-                prodsIcon.src = '/assets/img/icons/zoom-in.svg';
             }
         });
     });
