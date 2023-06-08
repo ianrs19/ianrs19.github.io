@@ -1,4 +1,4 @@
-// Obtener elementos del DOM
+// Obtener elementos del DOM para la busqueda de productos por caracteres
 const searchInput = document.getElementById('searchInput');
 const searchButton = document.getElementById('searchButton');
 const productItems = document.getElementsByClassName('product-item');
@@ -91,4 +91,9 @@ function searchProducts() {
         }
     }
 }
+
+
+
+// Obtener elementos del DOM para la muestra de la descripcion del producto seleccionado
+const readMore = document.querySelector('.desc');
 

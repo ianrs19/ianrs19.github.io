@@ -153,13 +153,27 @@ aside p {
 }
 
 .products-list .product-item .prod-title {
-    display: block;
+    display: flex;
+    flex-direction: row;
     width: 100%;
     padding: 8px 0;
     background: #2D3E50;
     color: #fff;
     text-align: center;
     cursor: zoom-in;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.prod-title img{
+    display: flex;
+    height: 100%;
+    width: 20px !important;
+    align-self: flex-end;
+    position: relative;
+    bottom: 1px;
 }
 
 .prod-attr-list {
