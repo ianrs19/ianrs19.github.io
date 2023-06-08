@@ -183,7 +183,7 @@ aside p {
     width: 100%;
     position: relative;
     bottom: 0px;
-    height: fit-content;
+    height: 310PX;
     transition: 0.4s all;
     flex-direction: column;
     text-align: start;
