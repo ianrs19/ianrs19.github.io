@@ -65,7 +65,7 @@ function searchProducts() {
 
     // Iterar sobre los productos y mostrar u ocultar según el término de búsqueda
     for (let i = 0; i < productItems.length; i++) {
-        const productName = productItems[i].querySelector('a').textContent.toLowerCase(); // Obtener el nombre del producto y convertirlo a minúsculas
+        const productName = productItems[i].querySelector('div').textContent.toLowerCase(); // Obtener el nombre del producto y convertirlo a minúsculas
 
         all.classList.add('ct_item-active');
         farm.classList.remove('ct_item-active');
