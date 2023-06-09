@@ -102,18 +102,30 @@ function searchProducts() {
 
 // Obtener elementos del DOM para la muestra de la descripcion del producto seleccionado
 if (window.innerWidth <= 850) {
-  const prodTitles = document.querySelectorAll('.prod-title');
-  prodTitles.forEach(function (prodTitle) {
-    prodTitle.addEventListener('click', function () {
-      const prodAttrList = this.nextElementSibling;
+    const prodTitles = document.querySelectorAll('.prod-title');
+    const prodImgs = document.querySelectorAll('.img-Prod');
+    const infoBtnImgs = document.querySelectorAll('.info-btn-Prod');
 
-      if (prodAttrList.style.display === 'flex') {
-        prodAttrList.style.display = 'none';
-      } else {
-        prodAttrList.style.display = 'flex';
-      }
+    prodTitles.forEach(function (prodTitle, index) {
+        prodTitle.addEventListener('click', function () {
+            const prodAttrList = this.nextElementSibling;
+            const prodImg = prodImgs[index];
+            const infoBtnImg = infoBtnImgs[index];
+
+            if (prodAttrList.style.display === 'flex') {
+                prodAttrList.style.display = 'none';
+                prodImg.classList.remove('disable');
+                prodImg.classList.add('enable-flex');
+                infoBtnImg.src = "/assets/img/icons/zoom-in.svg"; // Cambiar la imagen a su valor original
+            } else {
+                prodImg.classList.remove('enable-flex');
+                prodImg.classList.add('disable');
+                prodAttrList.style.display = 'flex';
+                prodImg.style.display = 'none';
+                infoBtnImg.src = "/assets/img/icons/arrows-minimize.svg"; // Cambiar la imagen al desplegar la lista
+            }
+        });
     });
-  });
 }
 
 
