@@ -339,11 +339,24 @@ aside p {
 
     .products-list .product-item .prod-title img {
         display: flex !important;
+        align-self: center;
     }
 
     .products-list .product-item .prod-title {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+        background: #2D3E50;
+        color: #fff;
+        text-align: center;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
         cursor: pointer;
     }
+    
 
     .category_list .category_item {
         display: block;
