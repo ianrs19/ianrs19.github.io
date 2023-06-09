@@ -229,7 +229,7 @@ aside p {
         flex-direction: column;
         align-items: center;
         align-self: flex-start;
-        transition: 0.4s all ;
+        transition: 0.4s all;
         min-width: 45%;
     }
 
@@ -306,14 +306,14 @@ aside p {
 /* RESPONSIVE */
 
 @media screen and (max-width: 850px) {
-    .disable{
+    .disable {
         display: none !important;
     }
 
-    .enable-flex{
+    .enable-flex {
         display: flex !important;
     }
-    
+
     main {
         flex-direction: column !important;
     }
@@ -326,7 +326,19 @@ aside p {
         padding: 0 15px;
         margin-top: 5px;
         transition: 0.4s all;
+    }
+
+    .prod-attr-list {
+        display: flex;
+        width: 100%;
+        position: relative;
+        bottom: 0px;
         height: fit-content;
+        transition: 0.4s all;
+        flex-direction: column;
+        text-align: start;
+        transition: 0.4s all;
+        padding: 0 15px;
     }
 
     .products-list .product-item img {
@@ -357,7 +369,7 @@ aside p {
         gap: 5px;
         cursor: pointer;
     }
-    
+
 
     .category_list .category_item {
         display: block;
