@@ -322,17 +322,11 @@ aside p {
         width: 100%;
     }
 
-    .prod-attr-list {
-        display: flex;
-        width: 100%;
-        position: relative;
-        bottom: 0px;
-        height: fit-content;
-        transition: 0.4s all;
-        flex-direction: column;
-        text-align: start;
-        transition: 0.4s all;
+    .products-list {
         padding: 0 15px;
+        margin-top: 5px;
+        transition: 0.4s all;
+        height: fit-content;
     }
 
     .products-list .product-item img {
