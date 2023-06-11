@@ -306,7 +306,7 @@ aside p {
 /* RESPONSIVE */
 
 @media screen and (max-width: 850px) {
-    .disable {
+    .disable-atribs {
         display: none !important;
     }
 

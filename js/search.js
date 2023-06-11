@@ -114,12 +114,12 @@ if (window.innerWidth <= 850) {
 
             if (prodAttrList.style.display === 'flex') {
                 prodAttrList.style.display = 'none';
-                prodImg.classList.remove('disable');
+                prodImg.classList.remove('disable-atribs');
                 prodImg.classList.add('enable-flex');
                 infoBtnImg.src = "/assets/img/icons/zoom-in.svg"; // Cambiar la imagen a su valor original
             } else {
                 prodImg.classList.remove('enable-flex');
-                prodImg.classList.add('disable');
+                prodImg.classList.add('disable-atribs');
                 prodAttrList.style.display = 'flex';
                 prodImg.style.display = 'none';
                 infoBtnImg.src = "/assets/img/icons/arrows-minimize.svg"; // Cambiar la imagen al desplegar la lista
