@@ -79,6 +79,9 @@ function searchProducts() {
         ali.classList.remove('ct_item-active');
         agri.classList.remove('ct_item-active');
         cos.classList.remove('ct_item-active');
+        if (window.innerWidth <= 1000) {
+            opOrCloseList();
+        }
 
         // Mostrar u ocultar productos según el término de búsqueda
         if ((productName.includes(searchTerm) || searchTerm === '') && !shownProductNames.includes(productName)) {
