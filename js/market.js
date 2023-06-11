@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 	$('#p-agri').click(function () {
 		var catProduct = $(this).attr('category');
-		console.log(catProduct);
+
 
 		// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO
 		$('.category_item').removeClass('ct_item-active');
@@ -31,7 +31,6 @@ $(document).ready(function () {
 
 	$('#p-ali').click(function () {
 		var catProduct = $(this).attr('category');
-		console.log(catProduct);
 
 		// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO
 		$('.category_item').removeClass('ct_item-active');
@@ -55,7 +54,7 @@ $(document).ready(function () {
 
 	$('#p-cos').click(function () {
 		var catProduct = $(this).attr('category');
-		console.log(catProduct);
+
 
 		// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO
 		$('.category_item').removeClass('ct_item-active');
@@ -80,7 +79,7 @@ $(document).ready(function () {
 
 	$('#p-farma').click(function () {
 		var catProduct = $(this).attr('category');
-		console.log(catProduct);
+
 
 		// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO
 		$('.category_item').removeClass('ct_item-active');
@@ -127,7 +126,7 @@ $(document).ready(function () {
 
 	$('#p-psc').click(function () {
 		var catProduct = $(this).attr('category');
-		console.log(catProduct);
+
 
 		// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO
 		$('.category_item').removeClass('ct_item-active');
