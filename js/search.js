@@ -14,65 +14,44 @@ const catList = document.getElementById('cat_list');
 const catContainer = document.getElementById('cat-cont');
 const arrowCategories = document.getElementById('arrowCategories');
 const prodTitles = document.querySelectorAll('.prod-title');
-var catActual = document.querySelector('.ct_item-active');
+
+var catActual = document.getElementById('cat-act-title');
 var opened = 0;
 
 
 if (window.innerWidth <= 1000) {
     catList.classList.add('list-closed');
     catContainer.style.height = '0';
-    all.addEventListener('click', opOrCloseList);
-    farm.addEventListener('click', opOrCloseList);
-    ind.addEventListener('click', opOrCloseList);
-    ali.addEventListener('click', opOrCloseList);
-    agri.addEventListener('click', opOrCloseList);
-    cos.addEventListener('click', opOrCloseList);
-    psc.addEventListener('click', opOrCloseList);
 
+    all.addEventListener('click', opOrCloseList);
+    all.addEventListener('click', obtenerTexto);
+
+    ali.addEventListener('click', opOrCloseList);
+    ali.addEventListener('click', obtenerTexto);
+
+
+    farm.addEventListener('click', opOrCloseList);
+    farm.addEventListener('click', obtenerTexto);
+
+    ind.addEventListener('click', opOrCloseList);
+    ind.addEventListener('click', obtenerTexto);
+
+    ali.addEventListener('click', opOrCloseList);
+    agri.addEventListener('click', obtenerTexto);
+
+    agri.addEventListener('click', opOrCloseList);
+    agri.addEventListener('click', obtenerTexto);
+
+    cos.addEventListener('click', opOrCloseList);
+    cos.addEventListener('click', obtenerTexto);
+
+    psc.addEventListener('click', opOrCloseList);
+    psc.addEventListener('click', obtenerTexto);
 }
 
-
-function opOrCloseList() {
-    if (opened === 0) {
-        arrowCategories.style.transform = 'rotate(180deg)';
-        catList.classList.remove('list-closed');
-        catList.classList.add('list-opened');
-        catContainer.style.height = 'fit-content';
-        catToggle.style.bottom = '0';
-        catToggle.style.marginBottom = '22px';
-        opened = 1; // Actualiza el estado a "abierta"
-    } else {
-        arrowCategories.style.transform = 'rotate(0deg)';
-        catContainer.style.height = '0';
-        catList.classList.add('list-closed');
-        catList.classList.remove('list-opened');
-        catToggle.style.bottom = '20px';
-        catToggle.style.marginBottom = '0px';
-        opened = 0; // Actualiza el estado a "cerrada"
-    }
-
-
-};
-
-catToggle.addEventListener('click', () => {
-    if (window.innerWidth <= 1000) {
-        opOrCloseList();
-    }
-});
-
-
-// Registrar los nombres de los productos mostrados
-const shownProductNames = [];
-
-// Agregar evento click al botón de búsqueda
-searchButton.addEventListener('click', searchProducts);
-
-// Agregar evento keydown al campo de entrada
-searchInput.addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-        searchProducts();
-    }
-});
+function obtenerTexto() {
+    catActual.textContent = this.textContent;
+}
 
 // Función de normalización de caracteres con tilde
 function normalizeString(string) {
@@ -117,6 +96,47 @@ function searchProducts() {
     }
 }
 
+function opOrCloseList() {
+    if (opened === 0) {
+        arrowCategories.style.transform = 'rotate(180deg)';
+        catList.classList.remove('list-closed');
+        catList.classList.add('list-opened');
+        catContainer.style.height = 'fit-content';
+        catToggle.style.bottom = '0';
+        catToggle.style.marginBottom = '22px';
+        opened = 1; // Actualiza el estado a "abierta"
+    } else {
+        arrowCategories.style.transform = 'rotate(0deg)';
+        catContainer.style.height = '0';
+        catList.classList.add('list-closed');
+        catList.classList.remove('list-opened');
+        catToggle.style.bottom = '20px';
+        catToggle.style.marginBottom = '0px';
+        opened = 0; // Actualiza el estado a "cerrada"
+    }
+};
+
+catToggle.addEventListener('click', () => {
+    if (window.innerWidth <= 1000) {
+        opOrCloseList();
+    }
+});
+
+
+// Registrar los nombres de los productos mostrados
+const shownProductNames = [];
+
+// Agregar evento click al botón de búsqueda
+searchButton.addEventListener('click', searchProducts);
+
+// Agregar evento keydown al campo de entrada
+searchInput.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        searchProducts();
+    }
+});
+
+
 // Obtener elementos del DOM para la muestra de la descripcion del producto seleccionado
 if (window.innerWidth <= 850) {
     const prodTitles = document.querySelectorAll('.prod-title');
@@ -144,4 +164,8 @@ if (window.innerWidth <= 850) {
         });
     });
 }
+
+
+
+
 
