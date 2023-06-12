@@ -147,6 +147,8 @@ if (window.innerWidth <= 850) {
     const prodTitles = document.querySelectorAll('.prod-title');
     const prodImgs = document.querySelectorAll('.img-Prod');
     const infoBtnImgs = document.querySelectorAll('.info-btn-Prod');
+    const prodItemSelected = document.querySelectorAll('.product-item');
+
     prodTitles.forEach(function (prodTitle, index) {
         prodTitle.addEventListener('click', function () {
             const prodAttrList = this.nextElementSibling;
@@ -165,9 +167,18 @@ if (window.innerWidth <= 850) {
                 prodImg.style.display = 'none';
                 infoBtnImg.src = "/assets/img/icons/arrows-minimize.svg"; // Cambiar la imagen al desplegar la lista
             }
+
+            if (prodAttrList.style.display === 'flex') {
+                prodItemSelected[index].style.flexDirection = 'column-reverse';
+            } else {
+                prodItemSelected[index].style.flexDirection = 'column';
+            }
         });
     });
 }
+
+
+
 
 
 
