@@ -14,7 +14,6 @@ const catList = document.getElementById('cat_list');
 const catContainer = document.getElementById('cat-cont');
 const arrowCategories = document.getElementById('arrowCategories');
 const prodTitles = document.querySelectorAll('.prod-title');
-
 var catActual = document.getElementById('cat-act-title');
 var opened = 0;
 
@@ -62,9 +61,6 @@ function searchProducts() {
     catActual.textContent = 'Todas las Categorías';
     const searchTerm = normalizeString(searchInput.value.toLowerCase()); // Normalizar y convertir el valor del campo de entrada a minúsculas
 
-    // Limpiar los registros de nombres de productos mostrados
-    shownProductNames.length = 0;
-
     // Iterar sobre los productos y mostrar u ocultar según el término de búsqueda
     for (let i = 0; i < productItems.length; i++) {
         const productName = normalizeString(productItems[i].querySelector('div').textContent.toLowerCase()); // Normalizar y convertir el nombre del producto a minúsculas
@@ -80,7 +76,7 @@ function searchProducts() {
         }
 
         // Mostrar u ocultar productos según el término de búsqueda
-        if ((productName.includes(searchTerm) || searchTerm === '') && !shownProductNames.includes(productName)) {
+        if ((productName.includes(searchTerm) || searchTerm === '')) {
             searchInput.value = "";
             productItems[i].style.display = 'flex'; // Mostrar producto
             productItems[i].style.transform = 'scale(0)'; // Establecer escala inicial a 0
@@ -88,9 +84,7 @@ function searchProducts() {
 
             setTimeout(function () {
                 productItems[i].style.transform = 'scale(1)'; // Establecer escala a 1 después de 400ms
-            }, 0); // Esperar un ciclo para aplicar la transición
-
-            shownProductNames.push(productName); // Registrar el nombre del producto mostrado
+            }, 0); // Esperar un ciclo para aplicar la transición        
         } else {
             productItems[i].style.display = 'none'; // Ocultar producto
         }
@@ -128,8 +122,7 @@ catToggle.addEventListener('click', () => {
 });
 
 
-// Registrar los nombres de los productos mostrados
-const shownProductNames = [];
+
 
 // Agregar evento click al botón de búsqueda
 searchButton.addEventListener('click', searchProducts);
