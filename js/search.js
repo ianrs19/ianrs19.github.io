@@ -1,4 +1,3 @@
-// Obtener elementos del DOM para la busqueda de productos por caracteres
 const searchInput = document.getElementById('searchInput');
 const searchButton = document.getElementById('searchButton');
 const productItems = document.getElementsByClassName('product-item');
@@ -20,28 +19,20 @@ var opened = 0;
 if (window.innerWidth <= 1000) {
     catList.classList.add('list-closed');
     catContainer.style.height = '0';
-
     all.addEventListener('click', opOrCloseList);
     all.addEventListener('click', obtenerTexto);
-
     ali.addEventListener('click', opOrCloseList);
     ali.addEventListener('click', obtenerTexto);
-
     farm.addEventListener('click', opOrCloseList);
     farm.addEventListener('click', obtenerTexto);
-
     ind.addEventListener('click', opOrCloseList);
     ind.addEventListener('click', obtenerTexto);
-
     ali.addEventListener('click', opOrCloseList);
     agri.addEventListener('click', obtenerTexto);
-
     agri.addEventListener('click', opOrCloseList);
     agri.addEventListener('click', obtenerTexto);
-
     cos.addEventListener('click', opOrCloseList);
     cos.addEventListener('click', obtenerTexto);
-
     psc.addEventListener('click', opOrCloseList);
     psc.addEventListener('click', obtenerTexto);
 }
@@ -50,7 +41,6 @@ function obtenerTexto() {
     catActual.textContent = this.textContent;
 }
 
-// Función de normalización de caracteres con tilde
 function normalizeString(string) {
     return string.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
@@ -73,18 +63,17 @@ function searchProducts() {
             closeList();
         }
 
-        // Mostrar u ocultar productos según el término de búsqueda
         if ((productName.includes(searchTerm) || searchTerm === '')) {
             searchInput.value = "";
-            productItems[i].style.display = 'flex'; // Mostrar producto
-            productItems[i].style.transform = 'scale(0)'; // Establecer escala inicial a 0
-            productItems[i].style.transition = 'transform 400ms'; // Establecer duración de la transición
+            productItems[i].style.display = 'flex';
+            productItems[i].style.transform = 'scale(0)';
+            productItems[i].style.transition = 'transform 400ms';
 
             setTimeout(function () {
-                productItems[i].style.transform = 'scale(1)'; // Establecer escala a 1 después de 400ms
-            }, 0); // Esperar un ciclo para aplicar la transición        
+                productItems[i].style.transform = 'scale(1)';
+            }, 0);
         } else {
-            productItems[i].style.display = 'none'; // Ocultar producto
+            productItems[i].style.display = 'none';
         }
     }
 }
@@ -97,7 +86,7 @@ function opOrCloseList() {
         catContainer.style.height = 'fit-content';
         catToggle.style.bottom = '0';
         catToggle.style.marginBottom = '22px';
-        opened = 1; // Actualiza el estado a "abierta"
+        opened = 1;
     } else {
         closeList();
     }
@@ -110,7 +99,7 @@ function closeList() {
     catList.classList.remove('list-opened');
     catToggle.style.bottom = '20px';
     catToggle.style.marginBottom = '0px';
-    opened = 0; // Actualiza el estado a "cerrada"
+    opened = 0;
 }
 
 catToggle.addEventListener('click', () => {
@@ -143,13 +132,13 @@ if (window.innerWidth <= 850) {
                 prodAttrList.style.display = 'none';
                 prodImg.classList.remove('disable-atribs');
                 prodImg.classList.add('enable-flex');
-                infoBtnImg.src = "/assets/img/icons/zoom-in.svg"; // Cambiar la imagen a su valor original
+                infoBtnImg.src = "/assets/img/icons/zoom-in.svg";
             } else {
                 prodImg.classList.remove('enable-flex');
                 prodImg.classList.add('disable-atribs');
                 prodAttrList.style.display = 'flex';
                 prodImg.style.display = 'none';
-                infoBtnImg.src = "/assets/img/icons/arrows-minimize.svg"; // Cambiar la imagen al desplegar la lista
+                infoBtnImg.src = "/assets/img/icons/arrows-minimize.svg";
             }
 
             if (prodAttrList.style.display === 'flex') {
