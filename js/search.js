@@ -147,7 +147,6 @@ if (window.innerWidth <= 850) {
     const prodTitles = document.querySelectorAll('.prod-title');
     const prodImgs = document.querySelectorAll('.img-Prod');
     const infoBtnImgs = document.querySelectorAll('.info-btn-Prod');
-
     prodTitles.forEach(function (prodTitle, index) {
         prodTitle.addEventListener('click', function () {
             const prodAttrList = this.nextElementSibling;
