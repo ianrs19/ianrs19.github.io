@@ -75,7 +75,7 @@ function searchProducts() {
         agri.classList.remove('ct_item-active');
         cos.classList.remove('ct_item-active');
         if (window.innerWidth <= 1000) {
-            opOrCloseList();
+            closeList();
         }
 
         // Mostrar u ocultar productos según el término de búsqueda
@@ -106,15 +106,19 @@ function opOrCloseList() {
         catToggle.style.marginBottom = '22px';
         opened = 1; // Actualiza el estado a "abierta"
     } else {
-        arrowCategories.style.transform = 'rotate(0deg)';
-        catContainer.style.height = '0';
-        catList.classList.add('list-closed');
-        catList.classList.remove('list-opened');
-        catToggle.style.bottom = '20px';
-        catToggle.style.marginBottom = '0px';
-        opened = 0; // Actualiza el estado a "cerrada"
+        closeList();
     }
 };
+
+function closeList() {
+    arrowCategories.style.transform = 'rotate(0deg)';
+    catContainer.style.height = '0';
+    catList.classList.add('list-closed');
+    catList.classList.remove('list-opened');
+    catToggle.style.bottom = '20px';
+    catToggle.style.marginBottom = '0px';
+    opened = 0; // Actualiza el estado a "cerrada"
+}
 
 catToggle.addEventListener('click', () => {
     if (window.innerWidth <= 1000) {
