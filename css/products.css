@@ -407,6 +407,10 @@ aside p {
         width: 100%;
     }
 
+    #cat-actual {
+        font-size: 14px;
+    }
+
     .product-item {
         width: 100% !important;
         margin: 0 !important;
