@@ -17,7 +17,6 @@ const prodTitles = document.querySelectorAll('.prod-title');
 var catActual = document.getElementById('cat-act-title');
 var opened = 0;
 
-
 if (window.innerWidth <= 1000) {
     catList.classList.add('list-closed');
     catContainer.style.height = '0';
@@ -27,7 +26,6 @@ if (window.innerWidth <= 1000) {
 
     ali.addEventListener('click', opOrCloseList);
     ali.addEventListener('click', obtenerTexto);
-
 
     farm.addEventListener('click', opOrCloseList);
     farm.addEventListener('click', obtenerTexto);
@@ -121,21 +119,14 @@ catToggle.addEventListener('click', () => {
     }
 });
 
-
-
-
-// Agregar evento click al botón de búsqueda
 searchButton.addEventListener('click', searchProducts);
 
-// Agregar evento keydown al campo de entrada
 searchInput.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         searchProducts();
     }
 });
 
-
-// Obtener elementos del DOM para la muestra de la descripcion del producto seleccionado
 if (window.innerWidth <= 850) {
     const prodTitles = document.querySelectorAll('.prod-title');
     const prodImgs = document.querySelectorAll('.img-Prod');
@@ -169,11 +160,3 @@ if (window.innerWidth <= 850) {
         });
     });
 }
-
-
-
-
-
-
-
-
