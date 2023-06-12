@@ -59,6 +59,7 @@ function normalizeString(string) {
 }
 
 function searchProducts() {
+    catActual.textContent = 'Todas las Categorías';
     const searchTerm = normalizeString(searchInput.value.toLowerCase()); // Normalizar y convertir el valor del campo de entrada a minúsculas
 
     // Limpiar los registros de nombres de productos mostrados
