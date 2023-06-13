@@ -12,7 +12,7 @@ aside {
     align-items: center;
 }
 
-.psc{
+.psc {
     height: fit-content !important;
 }
 
@@ -147,8 +147,8 @@ aside p {
 .category_list .category_item {
     display: block;
     width: 90%;
-    padding: 12px 0;
-    margin-bottom: 20px;
+    padding: 14px 0;
+    margin-bottom: 17px;
     background: #4b5d70;
     cursor: pointer;
     text-align: center;
