@@ -15,6 +15,7 @@ const arrowCategories = document.getElementById('arrowCategories');
 const prodTitles = document.querySelectorAll('.prod-title');
 const prodContainer = document.getElementById('products-container');
 const errorScreen = document.getElementById('search-error');
+const backTop = document.getElementById('back-to-top');
 var catActual = document.getElementById('cat-act-title');
 var opened = 0;
 
@@ -51,6 +52,24 @@ if (window.innerWidth <= 1000) {
     psc.addEventListener('click', opOrCloseList);
     psc.addEventListener('click', chooseCat);
 }
+
+window.addEventListener('scroll', function () {
+    var backToTopButton = document.getElementById('back-to-top');
+    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollPosition >= 1000 && window.innerWidth >= 1100) {
+        backToTopButton.style.display = 'flex';
+        backToTopButton.style.opacity = '1';
+    } else {
+        backToTopButton.style.opacity = '0';
+        setTimeout(function () {
+            backToTopButton.style.display = 'none';
+        }, 3000);
+    }
+});
+
+
+
 
 
 function chooseCat() {

@@ -12,6 +12,44 @@ aside {
     align-items: center;
 }
 
+#back-to-top {
+    width: 230px;
+    height: 55px;
+    display: none;
+    background-color: #505050;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 45px;
+    color: white;
+    position: fixed;
+    font-weight: 600;
+    z-index: 11111111;
+    bottom: 0;
+    margin-bottom: 75px;
+    left: 102px;
+    animation: fade-in 0.3s ease;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#back-to-top img {
+    position: relative;
+    bottom: 1px;
+}
+
 aside p {
     width: 69%;
     text-align: center;
@@ -136,7 +174,7 @@ aside p {
     text-align: center;
 }
 
-#search-error img{
+#search-error img {
     width: 100px;
 }
 
@@ -342,7 +380,7 @@ aside p {
         display: none !important;
     }
 
-    #search-error{
+    #search-error {
         margin: 4% auto;
         font-size: 13px;
         height: 250px;
