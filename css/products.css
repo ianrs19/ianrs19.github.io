@@ -27,12 +27,22 @@ aside {
     font-weight: 600;
     z-index: 11111111;
     bottom: 0;
-    margin-bottom: 75px;
-    left: 102px;
+    margin-bottom: 58px;
+    left: 100px;
     animation: fade-in 0.3s ease;
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.5s ease;
+}
+
+#back-to-top a {
+    color: white;
+    align-items: center;
+    display: flex;
+    gap: 6px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 
 @keyframes fade-in {

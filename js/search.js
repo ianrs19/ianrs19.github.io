@@ -15,7 +15,6 @@ const arrowCategories = document.getElementById('arrowCategories');
 const prodTitles = document.querySelectorAll('.prod-title');
 const prodContainer = document.getElementById('products-container');
 const errorScreen = document.getElementById('search-error');
-const backTop = document.getElementById('back-to-top');
 var catActual = document.getElementById('cat-act-title');
 var opened = 0;
 
@@ -62,12 +61,8 @@ window.addEventListener('scroll', function () {
         backToTopButton.style.opacity = '1';
     } else {
         backToTopButton.style.opacity = '0';
-        setTimeout(function () {
-            backToTopButton.style.display = 'none';
-        }, 3000);
     }
 });
-
 
 
 
