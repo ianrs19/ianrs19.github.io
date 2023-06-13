@@ -8,7 +8,7 @@ main {
 aside {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 490px;
     align-items: center;
 }
 
@@ -264,6 +264,7 @@ aside p {
     #search-error {
         margin-top: 10%;
         font-size: 14px;
+        justify-content: center;
     }
 
     .products-list {
@@ -342,7 +343,9 @@ aside p {
     }
 
     #search-error{
-        justify-content: flex-start;
+        margin: 4% auto;
+        font-size: 13px;
+        height: 250px;
     }
 
     #cat-actual {
