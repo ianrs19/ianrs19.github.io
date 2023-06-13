@@ -29,25 +29,25 @@ psc.addEventListener('click', openProdCont);
 if (window.innerWidth <= 1000) {
     catList.classList.add('list-closed');
     catContainer.style.height = '0';
-    
+
     all.addEventListener('click', opOrCloseList);
     all.addEventListener('click', chooseCat);
-    
+
     ali.addEventListener('click', opOrCloseList);
     ali.addEventListener('click', chooseCat);
 
     farm.addEventListener('click', opOrCloseList);
     farm.addEventListener('click', chooseCat);
-    
+
     ind.addEventListener('click', opOrCloseList);
     ind.addEventListener('click', chooseCat);
-    
+
     agri.addEventListener('click', opOrCloseList);
     agri.addEventListener('click', chooseCat);
-    
+
     cos.addEventListener('click', opOrCloseList);
     cos.addEventListener('click', chooseCat);
-    
+
     psc.addEventListener('click', opOrCloseList);
     psc.addEventListener('click', chooseCat);
 }
@@ -57,7 +57,7 @@ function chooseCat() {
     catActual.textContent = this.textContent;
 }
 
-function openProdCont(){
+function openProdCont() {
     prodContainer.style.display = 'grid';
     errorScreen.style.display = 'none';
 }
@@ -73,6 +73,7 @@ function searchProducts() {
     let foundItems = false; // Variable para rastrear si se encontraron elementos
 
     if (searchTerm != '') {
+        searchInput.value = "";
         searchInput.classList.remove('empty-err');
         searchInput.placeholder = 'Ej: Acido Láctico';
         // Iterar sobre los productos y mostrar u ocultar según el término de búsqueda
@@ -91,7 +92,7 @@ function searchProducts() {
             }
 
             if (productName.includes(searchTerm) || searchTerm === '') {
-                searchInput.value = "";
+
                 productItems[i].style.display = 'flex';
                 productItems[i].style.transform = 'scale(0)';
                 productItems[i].style.transition = 'transform 400ms';
