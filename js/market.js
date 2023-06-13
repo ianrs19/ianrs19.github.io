@@ -127,7 +127,6 @@ $(document).ready(function () {
 	$('#p-psc').click(function () {
 		var catProduct = $(this).attr('category');
 
-
 		// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO
 		$('.category_item').removeClass('ct_item-active');
 		$(this).addClass('ct_item-active');
