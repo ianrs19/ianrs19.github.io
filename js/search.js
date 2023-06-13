@@ -74,6 +74,7 @@ function searchProducts() {
 
     if (searchTerm != '') {
         searchInput.value = "";
+        searchInput.focus();
         searchInput.classList.remove('empty-err');
         searchInput.placeholder = 'Ej: Acido Láctico';
         // Iterar sobre los productos y mostrar u ocultar según el término de búsqueda
