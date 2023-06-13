@@ -12,6 +12,10 @@ aside {
     align-items: center;
 }
 
+.psc{
+    height: fit-content !important;
+}
+
 #back-to-top {
     width: 230px;
     height: 55px;
