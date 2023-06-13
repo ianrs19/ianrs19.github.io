@@ -13,33 +13,55 @@ const catList = document.getElementById('cat_list');
 const catContainer = document.getElementById('cat-cont');
 const arrowCategories = document.getElementById('arrowCategories');
 const prodTitles = document.querySelectorAll('.prod-title');
+const prodContainer = document.getElementById('products-container');
+const errorScreen = document.getElementById('search-error');
 var catActual = document.getElementById('cat-act-title');
 var opened = 0;
+
+all.addEventListener('click', openProdCont);
+ali.addEventListener('click', openProdCont);
+farm.addEventListener('click', openProdCont);
+ind.addEventListener('click', openProdCont);
+agri.addEventListener('click', openProdCont);
+cos.addEventListener('click', openProdCont);
+psc.addEventListener('click', openProdCont);
 
 if (window.innerWidth <= 1000) {
     catList.classList.add('list-closed');
     catContainer.style.height = '0';
+    
     all.addEventListener('click', opOrCloseList);
-    all.addEventListener('click', obtenerTexto);
+    all.addEventListener('click', chooseCat);
+    
     ali.addEventListener('click', opOrCloseList);
-    ali.addEventListener('click', obtenerTexto);
+    ali.addEventListener('click', chooseCat);
+
     farm.addEventListener('click', opOrCloseList);
-    farm.addEventListener('click', obtenerTexto);
+    farm.addEventListener('click', chooseCat);
+    
     ind.addEventListener('click', opOrCloseList);
-    ind.addEventListener('click', obtenerTexto);
-    ali.addEventListener('click', opOrCloseList);
-    agri.addEventListener('click', obtenerTexto);
+    ind.addEventListener('click', chooseCat);
+    
     agri.addEventListener('click', opOrCloseList);
-    agri.addEventListener('click', obtenerTexto);
+    agri.addEventListener('click', chooseCat);
+    
     cos.addEventListener('click', opOrCloseList);
-    cos.addEventListener('click', obtenerTexto);
+    cos.addEventListener('click', chooseCat);
+    
     psc.addEventListener('click', opOrCloseList);
-    psc.addEventListener('click', obtenerTexto);
+    psc.addEventListener('click', chooseCat);
 }
 
-function obtenerTexto() {
+
+function chooseCat() {
     catActual.textContent = this.textContent;
 }
+
+function openProdCont(){
+    prodContainer.style.display = 'grid';
+    errorScreen.style.display = 'none';
+}
+
 
 function normalizeString(string) {
     return string.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -48,35 +70,57 @@ function normalizeString(string) {
 function searchProducts() {
     catActual.textContent = 'Todas las Categorías';
     const searchTerm = normalizeString(searchInput.value.toLowerCase()); // Normalizar y convertir el valor del campo de entrada a minúsculas
+    let foundItems = false; // Variable para rastrear si se encontraron elementos
 
-    // Iterar sobre los productos y mostrar u ocultar según el término de búsqueda
-    for (let i = 0; i < productItems.length; i++) {
-        const productName = normalizeString(productItems[i].querySelector('div').textContent.toLowerCase()); // Normalizar y convertir el nombre del producto a minúsculas
+    if (searchTerm != '') {
+        searchInput.classList.remove('empty-err');
+        searchInput.placeholder = 'Ej: Acido Láctico';
+        // Iterar sobre los productos y mostrar u ocultar según el término de búsqueda
+        for (let i = 0; i < productItems.length; i++) {
 
-        all.classList.add('ct_item-active');
-        farm.classList.remove('ct_item-active');
-        ind.classList.remove('ct_item-active');
-        ali.classList.remove('ct_item-active');
-        agri.classList.remove('ct_item-active');
-        cos.classList.remove('ct_item-active');
-        if (window.innerWidth <= 1000) {
-            closeList();
+            const productName = normalizeString(productItems[i].querySelector('div').textContent.toLowerCase()); // Normalizar y convertir el nombre del producto a minúsculas
+
+            all.classList.add('ct_item-active');
+            farm.classList.remove('ct_item-active');
+            ind.classList.remove('ct_item-active');
+            ali.classList.remove('ct_item-active');
+            agri.classList.remove('ct_item-active');
+            cos.classList.remove('ct_item-active');
+            if (window.innerWidth <= 1000) {
+                closeList();
+            }
+
+            if (productName.includes(searchTerm) || searchTerm === '') {
+                searchInput.value = "";
+                productItems[i].style.display = 'flex';
+                productItems[i].style.transform = 'scale(0)';
+                productItems[i].style.transition = 'transform 400ms';
+
+                setTimeout(function () {
+                    productItems[i].style.transform = 'scale(1)';
+                }, 0);
+
+                foundItems = true; // Se encontró al menos un elemento
+                prodContainer.style.display = 'grid';
+                errorScreen.style.display = 'none';
+            } else {
+                productItems[i].style.display = 'none';
+            }
         }
 
-        if ((productName.includes(searchTerm) || searchTerm === '')) {
-            searchInput.value = "";
-            productItems[i].style.display = 'flex';
-            productItems[i].style.transform = 'scale(0)';
-            productItems[i].style.transition = 'transform 400ms';
-
-            setTimeout(function () {
-                productItems[i].style.transform = 'scale(1)';
-            }, 0);
-        } else {
-            productItems[i].style.display = 'none';
+        // Mostrar mensaje de error si no se encontraron elementos
+        if (!foundItems) {
+            prodContainer.style.display = 'none';
+            errorScreen.style.display = 'flex';
         }
+    } else {
+        searchInput.classList.add('empty-err');
+        searchInput.placeholder = 'El campo no puede estar vacío';
     }
+
 }
+
+
 
 function opOrCloseList() {
     if (opened === 0) {
