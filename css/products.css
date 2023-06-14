@@ -119,6 +119,10 @@ aside p {
     display: none;
 }
 
+.img-Prod {
+    height: 210px;
+    padding: 20px 0;
+}
 
 #products-container {
     display: grid;
@@ -218,7 +222,7 @@ aside p {
 
 .products-list .product-item img {
     display: flex;
-    width: 160px;
+    width: 170px;
 }
 
 .products-list .product-item .prod-title img {
