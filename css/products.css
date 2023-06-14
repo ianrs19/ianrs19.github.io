@@ -70,7 +70,7 @@ aside p {
 #searchContainer {
     padding: 30px;
     flex-direction: row;
-    margin-top: 150px;
+    margin-top: 30px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -104,6 +104,15 @@ aside p {
     border-bottom-right-radius: 6px;
 }
 
+h1 {
+    padding-top: 173px;
+    background-color: #2764E8;
+    display: grid;
+    place-content: center;
+    padding-bottom: 22px;
+    color: white;
+}
+
 #searchButton img {
     position: relative;
     right: 1px;
@@ -128,7 +137,7 @@ aside p {
     display: grid;
     width: 70%;
     padding-top: 20px;
-    margin-top: 160px;
+    margin-top: 20px;
 }
 
 .store-wrapper {
@@ -296,6 +305,16 @@ aside p {
 
 
 @media screen and (max-width: 1000px) {
+
+    h1 {
+        padding-top: 125px;
+        background-color: #2764E8;
+        display: grid;
+        place-content: center;
+        padding-bottom: 24px;
+        color: white;
+    }
+
     .products-list .product-item {
         margin-bottom: 25px;
         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
@@ -319,7 +338,7 @@ aside p {
         flex-wrap: wrap;
         height: fit-content;
         padding: 0 15px;
-        margin-top: 104px;
+        margin-top: 25px;
     }
 
     #products-container {
@@ -332,7 +351,7 @@ aside p {
     #searchContainer {
         padding: 30px;
         flex-direction: row;
-        margin-top: 100px;
+        margin-top: 25px;
         align-items: center;
         justify-content: center;
         width: 97%;
