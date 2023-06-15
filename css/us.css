@@ -83,8 +83,7 @@ header {
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    padding: 50px 100px;
-    margin-top: 50px;
+    padding: 50px 150px;
     gap: 150px;
 }
 
