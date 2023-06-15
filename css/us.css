@@ -22,13 +22,14 @@ header {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    padding: 0 100px;
-    gap: 30px;
+    padding: 0 70px;
+    
 }
 
 #prf{
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 #prf span{
@@ -37,7 +38,7 @@ header {
 }
 
 #welcome-us h1{
-    width: fit-content;
+    width: 100%;
     font-size: 50px;
     color: rgb(32, 107, 186);
     line-height: 1.7;
@@ -45,7 +46,7 @@ header {
 }
 
 #welcome-us img{
-    width: 650px;
-    border-radius: 5px;
+    width: 50%;
+    border-radius: 25px;
     
 }
