@@ -311,4 +311,8 @@ footer {
     .term-container h3 {
         font-size: 20px;
     }
+
+    #ambiental{
+        gap: 10px;
+    }
 }
