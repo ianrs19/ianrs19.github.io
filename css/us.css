@@ -23,7 +23,6 @@ header {
     justify-content: space-around;
     flex-direction: row;
     padding: 0 70px;
-    
 }
 
 #prf{
@@ -40,13 +39,41 @@ header {
 #welcome-us h1{
     width: 100%;
     font-size: 50px;
-    color: rgb(32, 107, 186);
+    color: #206bba;
     line-height: 1.7;
     margin-bottom: 10px;
 }
 
 #welcome-us img{
     width: 50%;
-    border-radius: 25px;
+    border-radius: 25px;    
+}
+
+#history{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    margin-top: 20px;
     
+    height: fit-content;
+    padding: 50px 125px;
+}
+
+#history h2{
+    color: #206bba;
+    border-bottom: 2px red solid;
+    width: fit-content;
+    padding: 15px 0px 15px 0;
+    text-align: start;
+    font-size: 29px;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#history p{
+    color: black;
+    padding: 0 30px;
+    line-height: 1.8;
 }
