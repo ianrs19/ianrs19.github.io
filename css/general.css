@@ -72,6 +72,30 @@ label {
     border: none;
 }
 
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #fff;
+    /* Fondo blanco */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    /* Fondo blanco */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2764e8;
+    /* Color de la barra */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2141b6;
+    /* Color de la barra al pasar el cursor */
+}
+
+
 /* ------------------------------------ */
 button {
     outline: none;
@@ -87,7 +111,6 @@ button:focus {
 iframe {
     border: none;
 }
-
 
 /* ESTILOS DEL MAIN DEL HEADER DE LA PAGINA */
 header {
