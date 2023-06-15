@@ -2,7 +2,7 @@ header {
     top: 0;
 }
 
-#welcome-us{
+#welcome-us {
     display: flex;
     flex-direction: row;
     height: 628px;
@@ -15,7 +15,7 @@ header {
     justify-content: space-around;
 }
 
-#discover{
+#discover {
     display: flex;
     width: 100%;
     height: 100%;
@@ -25,18 +25,18 @@ header {
     padding: 0 70px;
 }
 
-#prf{
+#prf {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 
-#prf span{
+#prf span {
     color: rgb(255, 0, 0);
     font-weight: bolder;
 }
 
-#welcome-us h1{
+#welcome-us h1 {
     width: 100%;
     font-size: 50px;
     color: #206bba;
@@ -44,23 +44,24 @@ header {
     margin-bottom: 10px;
 }
 
-#welcome-us img{
+#welcome-us img {
     width: 50%;
-    border-radius: 25px;    
+    border-radius: 25px;
 }
 
-#history{
+#history {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 30px;
     margin-top: 20px;
-    
+
     height: fit-content;
     padding: 50px 125px;
 }
 
-#history h2, #ambiental h2{
+#history h2,
+#ambiental h2 {
     color: #206bba;
     border-bottom: 2px red solid;
     width: fit-content;
@@ -72,13 +73,13 @@ header {
     margin: 0 auto;
 }
 
-#history p{
+#history p {
     color: black;
     padding: 0 30px;
     line-height: 1.8;
 }
 
-#vmvl{
+#vmvl {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -87,7 +88,7 @@ header {
     gap: 150px;
 }
 
-.term-container{
+.term-container {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -95,18 +96,18 @@ header {
     gap: 20px;
 }
 
-.term-container img{
+.term-container img {
     width: 44%;
     margin: 0 auto;
     border-radius: 10px;
 }
 
-.term-container h3{
+.term-container h3 {
     font-size: 25px;
     color: #206bba;
 }
 
-.tt-cnt{
+.tt-cnt {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -116,7 +117,7 @@ header {
     padding: 5px;
 }
 
-#ambiental{
+#ambiental {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -131,32 +132,140 @@ header {
     color: white;
 }
 
-#ambiental h2{
+#ambiental h2 {
     color: white;
 }
 
-#ambiental #how{
+#ambiental #how {
     display: flex;
     gap: 60px;
     width: 100%;
     height: fit-content;
 }
 
-#how{
+#how {
     margin-bottom: 80px;
 }
 
-#how img{
+#how img {
     width: 45%;
     border-radius: 10px;
     border: 2px #206aba93 solid;
 }
 
-#how p{
+#how p {
     text-align: justify !important;
     margin-top: 20px;
 }
 
-footer{
+footer {
     margin-top: 0;
+}
+
+@media screen and (max-width:1450px) {
+
+    #welcome-us {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        background-image: url(/assets/img/bg/2.svg);
+        background-size: cover;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 125px;
+        align-items: center;
+    }
+
+    #discover {
+        width: 100%;
+        flex-direction: column;
+        padding: 40px 0px 80px 0;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 30px;
+    }
+
+    #prf {
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    #discover h1 {
+        font-size: 30px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #discover p {
+        font-size: 12px;
+    }
+
+    #history {
+        padding: 50px 70px;
+    }
+
+    .term-container {
+        flex-direction: column;
+        padding: 10px 50px
+    }
+
+    .tt-cnt {
+        flex-direction: column;
+        width: 100%;
+        max-width: 700px;
+        text-align: center;
+    }
+
+    .term-container img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #vmvl p {
+        text-align: center !important;
+    }
+
+    #vmvl {
+        padding: 15px;
+        gap: 25px;
+    }
+
+    #vision {
+        flex-direction: column !important;
+    }
+
+    #history h2,
+    #ambiental h2 {
+        width: 90%;
+    }
+
+    #history p,
+    #vmvl p,
+    #ambiental p {
+        padding: 0 10px;
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 13.5px;
+    }
+
+    #ambiental {
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: justify;
+        align-items: center;
+    }
+
+    #ambiental #how {
+        flex-direction: column;
+    }
+
+    #ambiental #how img {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
 }
