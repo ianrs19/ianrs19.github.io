@@ -60,7 +60,7 @@ header {
     padding: 50px 125px;
 }
 
-#history h2{
+#history h2, #ambiental h2{
     color: #206bba;
     border-bottom: 2px red solid;
     width: fit-content;
@@ -114,4 +114,49 @@ header {
     line-height: 1.8;
     text-align: justify;
     padding: 5px;
+}
+
+#ambiental{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    padding: 50px 100px;
+    gap: 30px;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #3b4957;
+    color: white;
+}
+
+#ambiental h2{
+    color: white;
+}
+
+#ambiental #how{
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    height: fit-content;
+}
+
+#how{
+    margin-bottom: 80px;
+}
+
+#how img{
+    width: 45%;
+    border-radius: 10px;
+    border: 2px #206aba93 solid;
+}
+
+#how p{
+    text-align: justify !important;
+    margin-top: 20px;
+}
+
+footer{
+    margin-top: 0;
 }
