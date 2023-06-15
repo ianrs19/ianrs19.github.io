@@ -283,7 +283,9 @@ footer {
     }
 
     #discover p {
-        font-size: 9px;
+        font-size: 10px;
+        pad: 0 10px;
+        text-align: center;
     }
 
     #welcome-us img {
