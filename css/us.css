@@ -276,3 +276,37 @@ footer {
     }
 
 }
+
+@media screen and (max-width:500px) {
+    #discover h1 {
+        font-size: 21px;
+    }
+
+    #discover p {
+        font-size: 9px;
+    }
+
+    #welcome-us img {
+        width: 100%;
+        max-width: 274px;
+    }
+
+    #history h2, #ambiental h2 {
+        width: 97%;
+        font-size: 21px;
+    }
+
+    #history p, #vmvl p, #ambiental p {
+        padding: 0 8px;
+        font-size: 11.5px;
+        text-align: justify !important;
+    }
+
+    .term-container {
+        padding: 10px 0px;
+    }
+
+    .term-container h3 {
+        font-size: 20px;
+    }
+}
