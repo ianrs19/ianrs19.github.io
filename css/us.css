@@ -4,12 +4,48 @@ header {
 
 #welcome-us{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 628px;
-    background-color: aqua;
-    background-image: url(/assets/img/bg/us-dark.jpeg);
+    background-image: url(/assets/img/bg/2.svg);
     background-size: cover;
     width: 100%;
     margin: 0 auto;
     margin-top: 125px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#discover{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0 100px;
+    gap: 30px;
+}
+
+#prf{
+    display: flex;
+    flex-direction: column;
+}
+
+#prf span{
+    color: rgb(255, 0, 0);
+    font-weight: bolder;
+}
+
+#welcome-us h1{
+    width: fit-content;
+    font-size: 50px;
+    color: rgb(32, 107, 186);
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+#welcome-us img{
+    width: 650px;
+    border-radius: 5px;
+    
 }
