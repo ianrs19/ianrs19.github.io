@@ -62,6 +62,7 @@ window.addEventListener('scroll', function () {
         backToTopButton.style.opacity = '1';
     } else {
         backToTopButton.style.opacity = '0';
+        backToTopButton.style.display = 'none';
     }
 });
 

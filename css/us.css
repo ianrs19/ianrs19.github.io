@@ -77,3 +77,42 @@ header {
     padding: 0 30px;
     line-height: 1.8;
 }
+
+#vmvl{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 50px 100px;
+    margin-top: 50px;
+    gap: 150px;
+}
+
+.term-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+.term-container img{
+    width: 44%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.term-container h3{
+    font-size: 25px;
+    color: #206bba;
+}
+
+.tt-cnt{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 5px;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 5px;
+}
