@@ -213,6 +213,7 @@ if (window.innerWidth <= 850) {
 
             if (prodAttrList.style.display === 'flex') {
                 prodItemSelected[index].style.flexDirection = 'column-reverse';
+                prodItemSelected[index].style.minHeight = '273px';
             } else {
                 prodItemSelected[index].style.flexDirection = 'column';
             }
