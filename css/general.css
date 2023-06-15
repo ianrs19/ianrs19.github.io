@@ -118,7 +118,7 @@ header {
     display: flex;
     flex-direction: row;
     padding: 10px 5%;
-    height: 150px;
+    height: 125px;
     border-bottom: 2px #dadada solid;
     position: fixed;
     right: 0;

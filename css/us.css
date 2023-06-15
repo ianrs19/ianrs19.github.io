@@ -2,6 +2,14 @@ header {
     top: 0;
 }
 
-#sexo{
-    margin: 500px;
+#welcome-us{
+    display: flex;
+    flex-direction: column;
+    height: 628px;
+    background-color: aqua;
+    background-image: url(/assets/img/bg/us-dark.jpeg);
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 125px;
 }
