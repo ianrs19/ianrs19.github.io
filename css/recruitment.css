@@ -1,0 +1,6 @@
+#rc-form{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
