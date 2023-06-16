@@ -62,7 +62,8 @@ header {
 }
 
 #history h2,
-#ambiental h2 {
+#ambiental h2,
+#iso h2 {
     color: #206bba;
     border-bottom: 2px red solid;
     width: fit-content;
@@ -159,6 +160,46 @@ header {
     margin-top: 20px;
 }
 
+#iso{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    align-items: center;
+    height: fit-content;
+}
+
+#iso div{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    padding: 0 ;
+    line-height: 2;
+    justify-content: center;
+    height: fit-content;
+    margin-bottom: 150px;
+}
+
+#iso span{
+    color: #54B6C0;
+    font-weight: bolder;
+}
+
+#iso h2{
+    color: #20ba58c7;
+    border-bottom: 2px solid #54B6C0;
+}
+
+#iso p{
+    width: 45%;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+#iso img{
+    height: 400px;
+}
+
 footer {
     margin-top: 0;
 }
@@ -251,7 +292,8 @@ footer {
 
     #history p,
     #vmvl p,
-    #ambiental p {
+    #ambiental p,
+    #iso p {
         padding: 0 10px;
         text-align: justify;
         line-height: 1.8;
@@ -274,6 +316,22 @@ footer {
         max-width: 450px;
         margin: 0 auto;
     }
+
+    #iso div{
+        flex-direction: column;
+    }
+
+    #iso p {
+        width: 100%;
+        padding: 0px 10%;
+    }
+
+    #iso img{
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
 
 }
 
@@ -308,15 +366,24 @@ footer {
         max-width: 274px;
     }
 
-    #history h2, #ambiental h2 {
+    #history h2, #ambiental h2, #iso h2 {
         width: 97%;
-        font-size: 21px;
+        font-size: 23px;
     }
 
-    #history p, #vmvl p, #ambiental p {
+    #iso h2{
+        width: 90%;
+    }
+
+    #history p, #vmvl p, #ambiental p, #iso p {
         padding: 0 8px;
-        font-size: 14px;
+        font-size: 13px;
         text-align: justify !important;
+    }
+
+    #iso p, #iso img{
+        padding: 0 10%;
+
     }
 
     .term-container {
