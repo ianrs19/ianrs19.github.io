@@ -160,7 +160,7 @@ header {
     margin-top: 20px;
 }
 
-#iso{
+#iso {
     display: flex;
     flex-direction: column;
     margin-top: 70px;
@@ -168,35 +168,35 @@ header {
     height: fit-content;
 }
 
-#iso div{
+#iso div {
     width: 100%;
     display: flex;
     gap: 40px;
     margin-top: 30px;
-    padding: 0 ;
+    padding: 0;
     line-height: 2;
     justify-content: center;
     height: fit-content;
     margin-bottom: 150px;
 }
 
-#iso span{
+#iso span {
     color: #54B6C0;
     font-weight: bolder;
 }
 
-#iso h2{
+#iso h2 {
     color: #20ba58c7;
     border-bottom: 2px solid #54B6C0;
 }
 
-#iso p{
+#iso p {
     width: 45%;
     margin-right: 20px;
     text-align: justify;
 }
 
-#iso img{
+#iso img {
     height: 400px;
 }
 
@@ -205,7 +205,7 @@ footer {
 }
 
 @media screen and (max-width:1400px) {
-    #welcome-us h1{
+    #welcome-us h1 {
         font-size: 40px;
     }
 }
@@ -317,7 +317,7 @@ footer {
         margin: 0 auto;
     }
 
-    #iso div{
+    #iso div {
         flex-direction: column;
     }
 
@@ -326,12 +326,12 @@ footer {
         padding: 0px 10%;
     }
 
-    #iso img{
+    #iso img {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
     }
-    
+
 
 }
 
@@ -356,32 +356,38 @@ footer {
     }
 
     #discover p {
-        font-size: 14px;
-        pad: 0 10px;
+        font-size: 11px;
+        padding: 0 10px;
         text-align: center;
     }
 
     #welcome-us img {
         width: 100%;
-        max-width: 274px;
+        padding: 15px;
     }
 
-    #history h2, #ambiental h2, #iso h2 {
+    #history h2,
+    #ambiental h2,
+    #iso h2 {
         width: 97%;
         font-size: 23px;
     }
 
-    #iso h2{
+    #iso h2 {
         width: 90%;
     }
 
-    #history p, #vmvl p, #ambiental p, #iso p {
+    #history p,
+    #vmvl p,
+    #ambiental p,
+    #iso p {
         padding: 0 8px;
         font-size: 13px;
         text-align: justify !important;
     }
 
-    #iso p, #iso img{
+    #iso p,
+    #iso img {
         padding: 0 10%;
 
     }
@@ -394,7 +400,7 @@ footer {
         font-size: 20px;
     }
 
-    #ambiental{
+    #ambiental {
         gap: 10px;
     }
 }
