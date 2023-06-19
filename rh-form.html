@@ -30,34 +30,10 @@
         gtag('js', new Date());
         gtag('config', 'G-ZNTLZ09311');
     </script>
-
-    <script>
-        window.onload = function () {
-            var disponibilidad = document.getElementById('inmediata');
-            var tiempoRequerido = document.getElementById('tiempo');
-
-            // Verificar el estado de disponibilidad inicialmente
-            if (disponibilidad.value === 'Sí') {
-                tiempoRequerido.value = '0';
-                tiempoRequerido.disabled = true;
-            }
-
-            // Agregar evento de cambio a la opción de disponibilidad
-            disponibilidad.onchange = function () {
-                if (disponibilidad.value === 'Sí') {
-                    tiempoRequerido.value = '0';
-                    tiempoRequerido.disabled = true;
-                } else {
-                    tiempoRequerido.value = '';
-                    tiempoRequerido.disabled = false;
-                }
-            };
-        };
-    </script>
 </head>
 
 <body>
-    <header>
+    <header style="position: absolute; top: 0; box-shadow: none;">
         <a id="home" href="https://www.iqn.cr/">
             <img src="assets/img/logo/iqn-logo.jpg" alt="Logo de la empresa Importadora Química Del Norte S.A"
                 title="Logo de Importadora Química S.A">
@@ -97,12 +73,10 @@
     </header>
 
     <main id="rc-form">
-        <div id="with-us">
             <h1>Reclutamiento</h1>
-            <p>Rellena nuestro formulario para poder ser parte de IQN</p>
-        </div>
+            <p>Rellena el formulario de reclutamiento para poder formar parte de IQN:</p>
 
-        <form id="rh-form" action="rhform.php" method="post" role="form" data-toggle="validator">
+        <form id="rh-form" action="rh-form.php" method="post" role="form" data-toggle="validator">
             <div class="form-group">
                 <label for="puesto">Puesto solicitado</label>
                 <input class="form-control" type="text" name="puesto" placeholder="Puesto en el que desea aplicar"
@@ -110,8 +84,8 @@
             </div>
 
             <div class="form-group">
-                <label for="otravez">¿Ha laborado anteriormente con nosotros?</label>
-                <select class="form-control" name="otravez" required>
+                <label for="ex-trabajo">¿Ha laborado anteriormente con nosotros?</label>
+                <select class="form-control" name="ex-trabajo" required>
                     <option value="Sí">Sí</option>
                     <option value="No" selected>No</option>
                 </select>
@@ -126,7 +100,7 @@
             </div>
 
             <div class="form-group">
-                <label for="tiempo">¿En caso de no contar con disponibilidad inmediata, cuánto tiempo requeriría antes
+                <label for="tiempo">¿Si no cuenta con disponibilidad inmediata, cuánto tiempo requeriría antes
                     de iniciar a laborar?</label>
                 <input class="form-control" type="text" name="tiempo" id="tiempo"
                     placeholder="Indique el tiempo necesario antes de iniciar">
@@ -158,11 +132,11 @@
 
             <div class="form-group">
                 <label for="userfile">Adjunte su currículum (solo archivos .pdf, .doc, .docx)</label>
-                <input type="file" name="userfile" accept=".pdf, .doc, .docx">
+                <input type="file" name="userfile" id="file-input" accept=".pdf, .doc, .docx">
             </div>
 
             <div class="form-group">
-                <button class="btn btn-primary btn-block" type="submit">Enviar</button>
+                <button id="sub-btn" class="btn btn-primary btn-block" type="submit">Enviar</button>
             </div>
         </form>
     </main>
@@ -205,6 +179,7 @@
     });
 </script>
 <script src="/js/animations.js"></script>
+<script src="/js/validate-rhf.js"></script>
 <script src="/js/contact.js"></script>
 </body>
 
