@@ -59,6 +59,12 @@ dropProd.addEventListener('click', () => {
 });
 
 
+const ambiente = document.getElementById('ambient');
+const social = document.getElementById('social');
+const economico = document.getElementById('economic');
+const changeTo1 = document.getElementById('cc1');
+const changeTo2 = document.getElementById('cc2');
+const changeTo3 = document.getElementById('cc2');
 
 
 

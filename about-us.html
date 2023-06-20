@@ -26,30 +26,6 @@
     <link rel="stylesheet" href="/css/general.css">
     <link rel="stylesheet" href="/css/contacts.css">
     <link rel="stylesheet" href="/css/us.css">
-    <script>
-
-        const images = [
-            "/assets/img/bg/reciclaje.jpg",
-            "/assets/img/bg/ambiente.jpg",
-            "/assets/img/bg/laboral.jpg",
-            "/assets/img/bg/descarga (2).jpeg"
-        ];
-
-        let currentImageIndex = 0;
-        const imageElement = document.getElementById("amb-img");
-
-        function changeImage() {
-            imageElement.classList.add("hidden");
-
-            setTimeout(function () {
-                currentImageIndex = (currentImageIndex + 1) % images.length;
-                imageElement.src = images[currentImageIndex];
-                imageElement.classList.remove("hidden");
-            }, 800); // Cambia cada 5 segundos (5000ms)
-        }
-
-        setInterval(changeImage, 6000); // Ejecuta la función cada 5 segundos (5000ms)
-    </script>
 
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -182,37 +158,100 @@
         </section>
 
         <section id="ambiental" data-aos="fade-up" data-aos-duration="700">
-            <h2>Responsabilidad ambiental</h2>
-            <p data-aos="fade-up" data-aos-duration="700">En Importadora Quimica del Norte, estamos comprometidos con el
-                cuidado del medio ambiente y la promoción
-                de prácticas sostenibles en todas nuestras operaciones. Reconocemos la importancia de preservar nuestros
-                recursos naturales y minimizar el impacto ambiental de nuestras actividades. <br><br> A continuación, se
-                detallan
-                algunas de las prácticas de cuidado al medio ambiente y políticas de reciclaje que implementamos:</p>
-            <div id="how" data-aos="fade-up" data-aos-duration="700">
+            <h2>Responsabilidad Social Empresarial (RSE)</h2>
+            <p data-aos="fade-up" data-aos-duration="700">En Importadora Química del Norte, nos enorgullece llevar a
+                cabo nuestras operaciones comerciales con un fuerte compromiso con la responsabilidad social
+                empresarial. Creemos firmemente en el desarrollo integral, mejora continua y el impacto positivo que
+                podemos tener en la sociedad y el medio ambiente, construyendo un futuro mejor para todos. <br><br> A
+                continuación, se detalla más a fondo como llevamos este concepto a la aplicacion en distintas áreas:</p>
+            <div id="ambient" class="how part-open" data-aos="fade-up" data-aos-duration="700">
                 <div>
-                    <p>- <b>Gestión responsable de residuos:</b> Implementamos un sistema integral de gestión de
-                        residuos que
-                        incluye la clasificación, separación y disposición adecuada de los desechos generados en
-                        nuestras instalaciones. Nos aseguramos de cumplir con todas las normativas y regulaciones
-                        ambientales vigentes.</p>
-                    <p>- <b>Uso eficiente de recursos:</b> Nos esforzamos por optimizar el consumo de recursos naturales
-                        en
-                        nuestras operaciones. Esto implica la adopción de prácticas de eficiencia energética, el uso
-                        responsable del agua y la minimización del desperdicio en todas las etapas de nuestro proceso.
+                    <p>
+                        <b>Ambiente:</b> Como empresa responsable, nos esforzamos por preservar y proteger el medio
+                        ambiente en todos nuestros procesos. A continuación, se detalla algunas de nuestras prácticas
+                        ambientales:
                     </p>
-                    <p>- <b>Promoción del reciclaje:</b> Fomentamos activamente la cultura del reciclaje entre nuestros
-                        empleados, clientes y proveedores. Instamos a la separación y reciclaje de materiales como
-                        papel, cartón, plástico y vidrio, tanto en nuestras instalaciones como en eventos y actividades
-                        en los que participamos.</p>
-                    <p>- <b>Educación y concientización ambiental:</b> Realizamos programas de capacitación y
-                        concientización
-                        ambiental para nuestro equipo, con el objetivo de promover prácticas responsables y fomentar la
-                        participación activa en la protección del medio ambiente.</p>
+                    <p>- <b>Gestión responsable de residuos:</b> Implementamos un sistema integral de residuos que
+                        incluye reducir, realizar, clasificación y disposición de los desechos de acuerdo con las
+                        regulaciones ambientales. Además, constantemente buscamos estrategias para reducir al máximo los
+                        desechos generados en nuestras operaciones, promoviendo así la economía circular.</p>
+                    <p>- <b>Uso eficiente de recursos:</b> Nos esforzamos por optimizar el consumo de
+                        recursos naturales, implementando prácticas de eficiencia energética en nuestras operaciones, el
+                        uso responsable del agua y la disminución de residuos en todas las etapas de nuestros procesos.
+                    </p>
+                    <p>- <b>Educación y concientización ambiental:</b> Realizamos voluntariados y programas de
+                        capacitación para nuestros empleados, con el objetivo de promover una mayor comprensión y
+                        cuidado del medio ambiente.</p>
                 </div>
 
-                <img id="amb-img" src="/assets/img/bg/reciclaje.jpg" alt="Contenedores clasificados para reciclaje">
+                <img class="amb-img" src="/assets/img/bg/reciclaje.jpg" alt="Contenedores clasificados para reciclaje">
             </div>
+
+            <div id="social" class="how part-closed" data-aos="fade-up" data-aos-duration="700">
+                <div>
+                    <p>
+                        <b>Social:</b> Participamos activamente en proyectos que buscan mejorar la calidad de vida de
+                        las comunidades locales. Colaboramos con organizaciones no gubernamentales, fundaciones y
+                        entidades públicas para desarrollar iniciativas en áreas como la educación y salud.
+                    </p>
+                    <p>- <b>Proyectos de ayuda social:</b> Apoyamos un hogar de adultos mayores mediante donaciones de
+                        alimentos, especialmente leche, que es uno de los alimentos esenciales para su nutrición y
+                        bienestar. Con el fin de poder contribuir con la mejora de la calidad de vida de este sector.
+                        <br><br>
+                        Además, colaboramos con una escuela rural, proporcionando materiales educativos, útiles
+                        escolares y juegos que contribuyan al desarrollo integral de los niños. Entendemos que la
+                        educación es la base para un futuro próspero y nos enorgullece poder apoyar a estas comunidades
+                        en su desarrollo educativo.
+                    </p>
+                    <p>- <b>Bienestar de los trabajadores:</b> En Importadora Química del Norte, reconocemos que
+                        nuestros empleados son fundamentales para el éxito de nuestra empresa. Por ello, nos preocupamos
+                        por su bienestar y desarrollo integral. <br> Actualmente, nos encontramos en proceso de
+                        implementar programas de capacitación en habilidades blandas y comunicación, entre otros. Nos
+                        esforzamos por integrar de manera constante a nuestro equipo, fomentando la unión y una
+                        comunicación sólida y saludable. <br> Además, estamos promoviendo la salud integral de nuestros
+                        colaboradores, tanto en el aspecto físico como en el mental. Hemos creado espacios donde pueden
+                        expresar sus dudas, comentarios y sugerencias, fomentando así un ambiente de apertura y
+                        confianza. Asimismo, organizamos caminatas a parques nacionales con el objetivo de promover la
+                        unidad y el esparcimiento entre nuestros empleados.
+                    </p>
+                    <p>En Importadora Química del Norte, nos
+                        comprometemos a brindar un entorno laboral en el que nuestros empleados se sientan valorados y
+                        cuidados, ya que creemos que su bienestar es esencial para alcanzar nuestros objetivos como
+                        empresa.</p>
+                </div>
+
+                <img class="amb-img" src="/assets/img/bg/reciclaje.jpg" alt="Contenedores clasificados para reciclaje">
+            </div>
+
+            <div id="economic" class="how part-closed" data-aos="fade-up" data-aos-duration="700">
+                <div>
+                    <p>
+                        <b>Económico:</b> IQN se rige bajo políticas, principios éticos y valores en todas las
+                        actividades empresariales. Esto implica promover la transparencia, la integridad, la honestidad
+                        y el respeto hacia los clientes, proveedores, empleados y otras partes interesadas.
+                    </p>
+                    <p>- <b>Gestión responsable de residuos:</b> Implementamos un sistema integral de residuos que
+                        incluye reducir, realizar, clasificación y disposición de los desechos de acuerdo con las
+                        regulaciones ambientales. Además, constantemente buscamos estrategias para reducir al máximo los
+                        desechos generados en nuestras operaciones, promoviendo así la economía circular.</p>
+                    <p>- <b>Uso eficiente de recursos:</b> Nos esforzaNos esforzamos por optimizar el consumo de
+                        recursos naturales, implementando prácticas de eficiencia energética en nuestras operaciones, el
+                        uso responsable del agua y la disminución de residuos en todas las etapas de nuestros procesos.
+                    </p>
+                    <p>- <b>Educación y concientización ambiental:</b> Realizamos voluntariados y programas de
+                        capacitación para nuestros empleados, con el objetivo de promover una mayor comprensión y
+                        cuidado del medio ambiente.</p>
+                </div>
+
+                <img class="amb-img" src="/assets/img/bg/reciclaje.jpg" alt="Contenedores clasificados para reciclaje">
+            </div>
+
+            <div id="controls">
+                <span id="cc1">1</span>
+                <span id="cc2">2</span>
+                <span id="cc3">3</span>
+            </div>
+
         </section>
 
 
