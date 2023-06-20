@@ -157,7 +157,7 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
     echo $encoded;
 } else {
     if ($responseArray['type'] === 'success') {
-        header('Location: success.html');
+        header('Location: congrats.html');
         exit();
     } else {
         header('Location: error.html');
