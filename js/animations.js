@@ -59,36 +59,35 @@ dropProd.addEventListener('click', () => {
 });
 
 
+
 const ambiente = document.getElementById('ambient');
 const social = document.getElementById('social');
 const economico = document.getElementById('economic');
 const cc1 = document.getElementById('cc1');
 const cc2 = document.getElementById('cc2');
-const cc3 = document.getElementById('cc2');
+const cc3 = document.getElementById('cc3'); // Corregido
 
-const changes1 = () =>{
-  social.style.display= 'none';
-  economico.style.display= 'none';
-  ambiente.style.display= 'flex';
+social.style.display = 'none';
+economico.style.display = 'none';
+
+const changes1 = () => {
+  social.style.display = 'none';
+  economico.style.display = 'none';
+  ambiente.style.display = 'flex';
 }
 
-const changes2 = () =>{
-  social.style.display= 'flex !important';
-  economico.style.display= 'none';
-  ambiente.style.display= 'none';
+const changes2 = () => {
+  social.style.display = 'flex';
+  economico.style.display = 'none';
+  ambiente.style.display = 'none';
 }
 
-const changes3 = () =>{
-  social.style.display= 'none';
-  economico.style.display= 'flex';
-  ambiente.style.display= 'none';
+const changes3 = () => {
+  social.style.display = 'none';
+  economico.style.display = 'flex';
+  ambiente.style.display = 'none';
 }
 
 cc1.addEventListener('click', changes1);
 cc2.addEventListener('click', changes2);
 cc3.addEventListener('click', changes3);
-
-
-
-
-
