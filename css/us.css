@@ -153,6 +153,12 @@ header {
     width: 45%;
     border-radius: 10px;
     border: 2px #206aba93 solid;
+    transition: opacity 1s ease-in-out;
+    background-color: #206bba;
+    max-width: 600px;
+    min-width: 500px;
+    min-height: 450px;
+    max-height: 450px;
 }
 
 #how p {
@@ -202,6 +208,10 @@ header {
 
 footer {
     margin-top: 0;
+}
+
+.hidden {
+    opacity: 0;
 }
 
 @media screen and (max-width:1400px) {
@@ -313,8 +323,11 @@ footer {
 
     #ambiental #how img {
         width: 100%;
-        max-width: 450px;
         margin: 0 auto;
+        max-width: 500px;
+        min-width: 0;
+        min-height: 0;
+        max-height: 333px;
     }
 
     #iso div {

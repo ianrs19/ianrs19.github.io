@@ -27,6 +27,31 @@
     <link rel="stylesheet" href="/css/contacts.css">
     <link rel="stylesheet" href="/css/us.css">
     <script>
+
+        const images = [
+            "/assets/img/bg/reciclaje.jpg",
+            "/assets/img/bg/ambiente.jpg",
+            "/assets/img/bg/laboral.jpg",
+            "/assets/img/bg/descarga (2).jpeg"
+        ];
+
+        let currentImageIndex = 0;
+        const imageElement = document.getElementById("amb-img");
+
+        function changeImage() {
+            imageElement.classList.add("hidden");
+
+            setTimeout(function () {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                imageElement.src = images[currentImageIndex];
+                imageElement.classList.remove("hidden");
+            }, 800); // Cambia cada 5 segundos (5000ms)
+        }
+
+        setInterval(changeImage, 6000); // Ejecuta la función cada 5 segundos (5000ms)
+    </script>
+
+    <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
@@ -67,8 +92,7 @@
                         <a class="dropdown-item" href="/products.html">Productos para piscinas</a>
                     </div>
                 </div>
-                <li id="navi-item-down" class="navi-item"><a href="/about-us.html"
-                        class="active">Nosotros</a></li>
+                <li id="navi-item-down" class="navi-item"><a href="/about-us.html" class="active">Nosotros</a></li>
                 <li class="navi-item"><a href="/rh-form.html">Reclutamiento</a></li>
                 <li class="navi-item"><a href="/downloads.html">Descargables</a></li>
             </ul>
@@ -186,7 +210,8 @@
                         ambiental para nuestro equipo, con el objetivo de promover prácticas responsables y fomentar la
                         participación activa en la protección del medio ambiente.</p>
                 </div>
-                <img src="/assets/img/bg/reciclaje.jpg" alt="Contenedores clasificados para reciclaje">
+
+                <img id="amb-img" src="/assets/img/bg/reciclaje.jpg" alt="Contenedores clasificados para reciclaje">
             </div>
         </section>
 
@@ -194,7 +219,8 @@
         <section id="iso" data-aos="fade-up" data-aos-duration="700">
             <h2>Una empresa de confianza</h2>
             <div>
-                <p>Nuestro equipo cuenta con la certificacion <a href="/assets/docs/CERTIFICADO ISO 9001 IQN.pdf" target="_blank" style="color: #24adcb;"> ISO 9001:2015</a>, Sistema de Gestión de
+                <p>Nuestro equipo cuenta con la certificacion <a href="/assets/docs/CERTIFICADO ISO 9001 IQN.pdf"
+                        target="_blank" style="color: #24adcb;"> ISO 9001:2015</a>, Sistema de Gestión de
                     Calidad.
                     La cual es una norma de sistemas de gestión de la calidad (SGC), que se centra en todos los
                     elementos de
