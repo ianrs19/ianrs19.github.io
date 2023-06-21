@@ -62,9 +62,9 @@ dropProd.addEventListener('click', () => {
 
 const images1 = [
   "/assets/img/us/AMBIENTE1.jpeg",
-  "/assets/img/us/AMBIENTE2.jpeg",
   "/assets/img/us/AMBIENTE3.jpeg",
-  "/assets/img/bg/reciclaje.jpg"
+  "/assets/img/bg/reciclaje.jpg",
+  "/assets/img/us/AMBIENTE2.jpeg"
 ];
 
 const images2 = [
@@ -73,10 +73,7 @@ const images2 = [
 ];
 
 const images3 = [
-  "/assets/img/us/AMBIENTE1.jpeg",
-  "/assets/img/us/AMBIENTE2.jpeg",
-  "/assets/img/us/AMBIENTE3.jpeg",
-  "/assets/img/bg/reciclaje.jpg"
+  "/assets/img/us/ECONO.jpeg",
 ];
 
 let currentImageIndex1 = 0;
@@ -110,8 +107,8 @@ function changeImage3() {
   imageElement3.classList.add("hidden");
 
   setTimeout(function () {
-      currentImageIndex3 = (currentImageIndex3 + 1) % images2.length;
-      imageElement3.src = images2[currentImageIndex3];
+      currentImageIndex3 = (currentImageIndex3 + 1) % images3.length;
+      imageElement3.src = images3[currentImageIndex3];
       imageElement3.classList.remove("hidden");
   }, 800); // Cambia cada 5 segundos (5000ms)
 }
