@@ -62,7 +62,7 @@ header {
 }
 
 #history h2,
-#ambiental h2,
+#rse h2,
 #iso h2 {
     color: #206bba;
     border-bottom: 2px red solid;
@@ -119,7 +119,7 @@ header {
     padding: 5px;
 }
 
-#ambiental {
+#rse {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -134,7 +134,7 @@ header {
     color: white;
 }
 
-#ambiental h2 {
+#rse h2 {
     color: white;
     width: 100%;
 }
@@ -344,13 +344,13 @@ footer {
     }
 
     #history h2,
-    #ambiental h2 {
+    #rse h2 {
         width: 90%;
     }
 
     #history p,
     #vmvl p,
-    #ambiental p,
+    #rse p,
     #iso p {
         padding: 0 10px;
         text-align: justify;
@@ -358,7 +358,7 @@ footer {
         font-size: 13.5px;
     }
 
-    #ambiental {
+    #rse {
         padding-left: 5%;
         padding-right: 5%;
         text-align: justify;
@@ -432,7 +432,7 @@ footer {
     }
 
     #history h2,
-    #ambiental h2,
+    #rse h2,
     #iso h2 {
         width: 97%;
         font-size: 23px;
@@ -444,7 +444,7 @@ footer {
 
     #history p,
     #vmvl p,
-    #ambiental p,
+    #rse p,
     #iso p {
         padding: 0 8px;
         font-size: 13px;
@@ -465,7 +465,7 @@ footer {
         font-size: 20px;
     }
 
-    #ambiental {
+    #rse {
         gap: 10px;
     }
 
