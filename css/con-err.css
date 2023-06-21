@@ -44,6 +44,10 @@ h1{
     color: rgba(107, 114, 128, 1);
 }
 
+.error{
+    background-color: rgb(253, 49, 49);
+}
+
 .message {
     margin-top: 1rem;
     color: rgba(107, 114, 128, 1);
@@ -70,10 +74,16 @@ h1{
     font-weight: 600;
     cursor: pointer;
     transition: all 0.5s;
+    background-color: rgb(255, 60, 60) !important;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.message a{
+    color: rgba(59, 130, 246, 1) !important;
 }
 
 .read {
-    background-color: rgba(59, 130, 246, 1);
+    background-color: rgba(59, 130, 246, 1) !important;
     color: rgba(255, 255, 255, 1);
     border: 2px solid rgba(59, 130, 246, 1);
     transition: all 0.5s;

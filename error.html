@@ -21,9 +21,8 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZNTLZ09311"></script>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/con-err.css">
     <link rel="stylesheet" href="/css/general.css">
-    <link rel="stylesheet" href="/css/contacts.css">
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -73,7 +72,29 @@
     </header>
 
     <main id="landing-page-index">
-        <h1 style="display: block; margin: 400px auto; ">ERROR</h1>
+        <div class="card">
+            <div class="header">
+                <span class="icon error">
+                    <img src="/assets/img/icons/face-id-error.svg" alt="">
+                </span>
+                <h1 class="alert">Datos del formulario no entregados!</h1>
+            </div>
+
+            <p class="message">
+                Lastimosamente, el formulario no pudo llegar a nuestras manos, por lo cual, te recomendamos comunicarte
+                con nosotros directamente a traves de nuestro correo: <a href="mailto:empleo@iqn.cr">empleo@iqn.cr</a>.
+            </p>
+
+            <div class="actions">
+                <a class="read" href="https://www.iqn.cr/">
+                    Volver a Inicio
+                </a>
+                <a class="mark-as-read" href="mailto:empleo@iqn.cr">
+                    Comunicarme con Recursos Humanos
+                </a>
+            </div>
+        </div>
+
     </main>
     <footer>
         <div id="foot-divs">
@@ -111,8 +132,8 @@
             disable: 'mobile'
         });
     </script>
+
     <script src="/js/animations.js"></script>
-    <script src="/js/contact.js"></script>
 </body>
 
 </html>
