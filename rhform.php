@@ -28,12 +28,19 @@ $subject = 'Nuevo mensaje desde el Formulario de reclutamiento desde el sitio we
 
 // smtp credentials and server
 $smtpHost = 'smtp.gmail.com';
-$smtpUsername = 'empleo@iqn.cr';
+$smtpUsername = 'iqncontactform@gmail.com';
 $smtpPassword = 'pfbgxojnmudpvvjj'; //'Olger1980';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('puesto' => 'Puesto solicitado', 'ex-trabajo' => 'Ha laborado anteriormente con nosotros?', 'inmediata' => 'Disponibilidad inmediata?', 'tiempo' => 'Cuánto tiempo requeriría antes?', 'horario' => 'Horario?', 'name' => 'Nombre', 'phone' => 'Teléfono', 'email' => 'Email');
+$fields = array('puesto' => 'Puesto solicitado', 
+'ex-trabajo' => 'Ha laborado anteriormente con nosotros?', 
+'inmediata' => 'Disponibilidad inmediata?', 
+'tiempo' => 'Cuánto tiempo requeriría antes?', 
+'horario' => 'Horario?', 
+'name' => 'Nombre', 
+'phone' => 'Teléfono', 
+'email' => 'Email');
 
 // message that will be displayed when everything is OK :)
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
@@ -116,15 +123,15 @@ try {
     );
 
     if (array_key_exists('userfile', $_FILES)) {
-        // First handle the upload
-        // Don't trust provided filename - same goes for MIME types
-        // See http://php.net/manual/en/features.file-upload.php#114004 for more thorough upload validation
-        // Extract an extension from the provided filename
-        $ext = pathinfo($_FILES['userfile']['name'], PATHINFO_EXTENSION);
-        // Define a safe location to move the uploaded file to, preserving the extension
+        //First handle the upload
+        //Don't trust provided filename - same goes for MIME types
+        //See http://php.net/manual/en/features.file-upload.php#114004 for more thorough upload validation
+        //Extract an extension from the provided filename
+        $ext = PHPMailer::mb_pathinfo($_FILES['userfile']['name'], PATHINFO_EXTENSION);
+        //Define a safe location to move the uploaded file to, preserving the extension
         $uploadfile = tempnam(sys_get_temp_dir(), hash('sha256', $_FILES['userfile']['name'])) . '.' . $ext;
         if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-            // Attach the uploaded file
+            //Attach the uploaded file
             if (!$mail->addAttachment($uploadfile, $_FILES['userfile']['name'])) {
                 $msg .= 'Failed to attach file ' . $_FILES['userfile']['name'];
                 throw new \Exception($msg);
@@ -133,8 +140,8 @@ try {
             $msg .= 'Failed to move file to ' . $uploadfile;
             throw new \Exception($msg);
         }
-    }
 
+    }
 
     if (!$mail->send()) {
         throw new \Exception('I could not send the email.' . $mail->ErrorInfo);
