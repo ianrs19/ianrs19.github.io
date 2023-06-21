@@ -1,14 +1,15 @@
 .card {
-    max-width: 350px;
+    width: 100%;
+    max-width: 380px;
     border-width: 1px;
     border-color: rgba(219, 234, 254, 1);
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 1);
     padding: 1rem;
-    margin-top: 50px;
-    box-shadow: 0px 0px 15px 7px rgba(162,162,162,1);
-    -webkit-box-shadow: 0px 0px 15px 7px rgba(162,162,162,1);
-    -moz-box-shadow: 0px 0px 15px 7px rgba(162,162,162,1);
+    margin-top: 90px;
+    box-shadow: 0px 0px 15px 7px rgba(162, 162, 162, 0.867);
+    -webkit-box-shadow: 0px 0px 15px 7px rgba(162, 162, 162, 0.867);
+    -moz-box-shadow: 0px 0px 15px 7px rgba(162, 162, 162, 0.867);
 }
 
 .header {
@@ -25,7 +26,7 @@
     justify-content: center;
     border-radius: 9999px;
     background-color: rgb(29, 199, 34);
-    padding: 0.5rem;
+    padding: 0.55rem;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -42,6 +43,7 @@
 .message {
     margin-top: 1rem;
     color: rgba(107, 114, 128, 1);
+    line-height: 1.4;
 }
 
 .actions {
@@ -84,7 +86,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 200px;
+    padding: 200px 5%;
     justify-content: center;
     align-items: center;
     background-color: #eaeaea;

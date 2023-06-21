@@ -60,43 +60,62 @@ dropProd.addEventListener('click', () => {
 
 
 
-const ambiente = document.getElementById('ambient');
-const social = document.getElementById('social');
-const economico = document.getElementById('economic');
-const cc1 = document.getElementById('cc1');
-const cc2 = document.getElementById('cc2');
-const cc3 = document.getElementById('cc3'); // Corregido
+const images1 = [
+  "/assets/img/us/AMBIENTE1.jpeg",
+  "/assets/img/us/AMBIENTE2.jpeg",
+  "/assets/img/us/AMBIENTE3.jpeg",
+  "/assets/img/bg/reciclaje.jpg"
+];
 
-social.style.display = 'none';
-economico.style.display = 'none';
+const images2 = [
+  "/assets/img/us/SOCIAL1.jpeg",
+  "/assets/img/us/SOCIAL2.jpeg"
+];
 
-const changes1 = () => {
-  social.style.display = 'none';
-  cc1.classList.add('spanActive');
-  cc2.classList.remove('spanActive');
-  cc3.classList.remove('spanActive');
-  economico.style.display = 'none';
-  ambiente.style.display = 'flex';
+const images3 = [
+  "/assets/img/us/AMBIENTE1.jpeg",
+  "/assets/img/us/AMBIENTE2.jpeg",
+  "/assets/img/us/AMBIENTE3.jpeg",
+  "/assets/img/bg/reciclaje.jpg"
+];
+
+let currentImageIndex1 = 0;
+let currentImageIndex2 = 0;
+let currentImageIndex3 = 0;
+const imageElement1 = document.querySelector("#ambient .amb-img");
+const imageElement2 = document.querySelector("#social .amb-img");
+const imageElement3 = document.querySelector("#economic .amb-img");
+
+function changeImage1() {
+  imageElement1.classList.add("hidden");
+
+  setTimeout(function () {
+      currentImageIndex1 = (currentImageIndex1 + 1) % images1.length;
+      imageElement1.src = images1[currentImageIndex1];
+      imageElement1.classList.remove("hidden");
+  }, 800); // Cambia cada 5 segundos (5000ms)
 }
 
-const changes2 = () => {
-  social.style.display = 'flex';
-  cc2.classList.add('spanActive');
-  cc3.classList.remove('spanActive');
-  cc1.classList.remove('spanActive');
-  economico.style.display = 'none';
-  ambiente.style.display = 'none';
+function changeImage2() {
+  imageElement2.classList.add("hidden");
+
+  setTimeout(function () {
+      currentImageIndex2 = (currentImageIndex2 + 1) % images2.length;
+      imageElement2.src = images2[currentImageIndex2];
+      imageElement2.classList.remove("hidden");
+  }, 800); // Cambia cada 5 segundos (5000ms)
 }
 
-const changes3 = () => {
-  social.style.display = 'none';
-  economico.style.display = 'flex';
-  cc3.classList.add('spanActive');
-  cc1.classList.remove('spanActive');
-  cc2.classList.remove('spanActive');
-  ambiente.style.display = 'none';
+function changeImage3() {
+  imageElement3.classList.add("hidden");
+
+  setTimeout(function () {
+      currentImageIndex3 = (currentImageIndex3 + 1) % images2.length;
+      imageElement3.src = images2[currentImageIndex3];
+      imageElement3.classList.remove("hidden");
+  }, 800); // Cambia cada 5 segundos (5000ms)
 }
 
-cc1.addEventListener('click', changes1);
-cc2.addEventListener('click', changes2);
-cc3.addEventListener('click', changes3);
+setInterval(changeImage1, 7000); // Ejecuta la función cada 5 segundos (5000ms)
+setInterval(changeImage2, 7000); // Ejecuta la función cada 5 segundos (5000ms)
+setInterval(changeImage3, 7000); // Ejecuta la función cada 5 segundos (5000ms)

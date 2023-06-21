@@ -138,7 +138,7 @@ header {
     color: white;
 }
 
-#ambiental .how {
+.how {
     display: flex;
     gap: 60px;
     width: 100%;
@@ -152,18 +152,22 @@ header {
 .how img {
     width: 45%;
     border-radius: 10px;
-    border: 2px #206aba93 solid;
+    border: 2px #00000024 solid;
     transition: opacity 1s ease-in-out;
-    background-color: #206bba;
-    max-width: 600px;
-    min-width: 500px;
+    max-width: 550px;
+    min-width: 440px;
     min-height: 450px;
     max-height: 450px;
+    transition: opacity 1.4s ease-in-out;
 }
 
 .how p {
     text-align: justify !important;
     margin-top: 20px;
+}
+
+.hidden{
+    opacity: 0;
 }
 
 #iso {
@@ -357,17 +361,21 @@ footer {
         align-items: center;
     }
 
-    #ambiental .how {
+    .how {
         flex-direction: column;
     }
 
-    #ambiental .how img {
+    .how img {
         width: 100%;
         margin: 0 auto;
-        max-width: 500px;
+        max-width: 350px;
         min-width: 0;
-        min-height: 0;
-        max-height: 333px;
+        min-height: 330px;
+        max-height: 330px;
+    }
+
+    .how {
+        gap: 30px;
     }
 
     #iso div {
@@ -455,6 +463,15 @@ footer {
 
     #ambiental {
         gap: 10px;
+    }
+
+    .how img {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 360px;
+        min-width: 0;
+        min-height: 300px;
+        max-height: 300px;
     }
 }
 

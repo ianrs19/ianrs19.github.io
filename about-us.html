@@ -186,7 +186,8 @@
                         cuidado del medio ambiente.</p>
                 </div>
 
-                <img class="amb-img" src="/assets/img/bg/reciclaje.jpg" alt="Contenedores clasificados para reciclaje">
+                <img id="am-imgContainer" class="amb-img" src="/assets/img/bg/reciclaje.jpg"
+                    alt="Contenedores clasificados para reciclaje">
             </div>
 
             <div id="social" class="how">
@@ -210,7 +211,8 @@
                         por su bienestar y desarrollo integral. <br><br> Actualmente, nos encontramos en proceso de
                         implementar programas de capacitación en habilidades blandas y comunicación, entre otros. Nos
                         esforzamos por integrar de manera constante a nuestro equipo, fomentando la unión y una
-                        comunicación sólida y saludable. <br><br> Además, estamos promoviendo la salud integral de nuestros
+                        comunicación sólida y saludable. <br><br> Además, estamos promoviendo la salud integral de
+                        nuestros
                         colaboradores, tanto en el aspecto físico como en el mental. Hemos creado espacios donde pueden
                         expresar sus dudas, comentarios y sugerencias, fomentando así un ambiente de apertura y
                         confianza. Asimismo, organizamos caminatas a parques nacionales con el objetivo de promover la
@@ -222,7 +224,7 @@
                         empresa.</p>
                 </div>
 
-                <img class="amb-img" src="/assets/img/bg/reciclaje.jpg" alt="Contenedores clasificados para reciclaje">
+                <img class="amb-img" src="/assets/img/us/SOCIAL1.jpeg" alt="Contenedores clasificados para reciclaje">
             </div>
 
             <div id="economic" class="how">
@@ -239,7 +241,7 @@
 
             <div id="controls">
                 <span id="cc1" class="spanActive">Ambiente</span>
-                <span id="cc2">Social</span>
+                <span id="cc2">Acción Social</span>
                 <span id="cc3">Económico</span>
             </div>
 
@@ -320,6 +322,50 @@
     </script>
     <script src="/js/animations.js"></script>
     <script src="/js/contact.js"></script>
+    <script>
+
+        const ambiente = document.getElementById('ambient');
+        const social = document.getElementById('social');
+        const economico = document.getElementById('economic');
+        const cc1 = document.getElementById('cc1');
+        const cc2 = document.getElementById('cc2');
+        const cc3 = document.getElementById('cc3'); // Corregido
+
+        social.style.display = 'none';
+        economico.style.display = 'none';
+
+        const changes1 = () => {
+            social.style.display = 'none';
+            cc1.classList.add('spanActive');
+            cc2.classList.remove('spanActive');
+            cc3.classList.remove('spanActive');
+            economico.style.display = 'none';
+            ambiente.style.display = 'flex';
+        }
+
+        const changes2 = () => {
+            social.style.display = 'flex';
+            cc2.classList.add('spanActive');
+            cc3.classList.remove('spanActive');
+            cc1.classList.remove('spanActive');
+            economico.style.display = 'none';
+            ambiente.style.display = 'none';
+        }
+
+        const changes3 = () => {
+            social.style.display = 'none';
+            economico.style.display = 'flex';
+            cc3.classList.add('spanActive');
+            cc1.classList.remove('spanActive');
+            cc2.classList.remove('spanActive');
+            ambiente.style.display = 'none';
+        }
+
+        cc1.addEventListener('click', changes1);
+        cc2.addEventListener('click', changes2);
+        cc3.addEventListener('click', changes3);
+
+    </script>
 </body>
 
 </html>
