@@ -28,7 +28,7 @@ $subject = 'Nuevo mensaje desde el Formulario de reclutamiento desde el sitio we
 
 // smtp credentials and server
 $smtpHost = 'smtp.gmail.com';
-$smtpUsername = 'iqncontactform@gmail.com';
+$smtpUsername = 'empleo@iqn.cr';
 $smtpPassword = 'pfbgxojnmudpvvjj';//'Olger1980';
 
 // form field names and their translations.
