@@ -130,12 +130,13 @@ header {
     line-height: 1.8;
     text-align: center;
     margin-top: 100px;
-    background-color: #3b4957;
+    background-color: #192c40;
     color: white;
 }
 
 #ambiental h2 {
     color: white;
+    width: 100%;
 }
 
 .how {
@@ -229,6 +230,8 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin: 30px auto;
+
 }
 
 #controls span {
@@ -241,6 +244,7 @@ footer {
     border: 3px solid #ffffff;
     transition: 0.5s all ease;
     text-align: center;
+    width: 300px;
 }
 
 #controls span:hover {
