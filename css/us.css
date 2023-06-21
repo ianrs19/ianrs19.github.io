@@ -240,6 +240,11 @@ footer {
     text-align: center;
 }
 
+.spanActive{
+    color: #ffffff00;
+    background-color: #ffffff;
+}
+
 #controls span:hover{
     transition: 0.5s all ease;
     transform: scale(1.05);
