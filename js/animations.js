@@ -72,18 +72,18 @@ economico.style.display = 'none';
 
 const changes1 = () => {
   social.style.display = 'none';
-  cc2.classList.toggle('spanActive');
+  cc1.classList.add('spanActive');
+  cc2.classList.remove('spanActive');
+  cc3.classList.remove('spanActive');
   economico.style.display = 'none';
-  cc3.classList.toggle('spanActive');
   ambiente.style.display = 'flex';
-  ambiente.classList.add = 'spanActive';
 }
 
 const changes2 = () => {
   social.style.display = 'flex';
-  cc2.classList.add = 'spanActive';
-  cc3.classList.toggle('spanActive');
-  cc1.classList.toggle('spanActive');
+  cc2.classList.add('spanActive');
+  cc3.classList.remove('spanActive');
+  cc1.classList.remove('spanActive');
   economico.style.display = 'none';
   ambiente.style.display = 'none';
 }
@@ -91,9 +91,9 @@ const changes2 = () => {
 const changes3 = () => {
   social.style.display = 'none';
   economico.style.display = 'flex';
-  cc1.classList.toggle('spanActive');
-  cc2.classList.toggle('spanActive');
-  economico.classList.add = 'spanActive';
+  cc3.classList.add('spanActive');
+  cc1.classList.remove('spanActive');
+  cc2.classList.remove('spanActive');
   ambiente.style.display = 'none';
 }
 

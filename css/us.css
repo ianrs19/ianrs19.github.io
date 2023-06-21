@@ -210,15 +210,15 @@ footer {
     margin-top: 0;
 }
 
-.part-open{
+.part-open {
     display: flex;
 }
 
-.part-closed{
+.part-closed {
     display: none !important;
 }
 
-#controls{
+#controls {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -228,10 +228,9 @@ footer {
 }
 
 #controls span {
-    width: 55px;
+    padding: 15px 15px;
     font-weight: 600;
     border-radius: 1000px;
-    padding: 10px;
     background-color: #ffffff00;
     color: #ffffff;
     cursor: pointer;
@@ -240,12 +239,17 @@ footer {
     text-align: center;
 }
 
-.spanActive{
-    color: #ffffff00;
+#controls span:hover {
+    color: #133047;
     background-color: #ffffff;
 }
 
-#controls span:hover{
+.spanActive {
+    color: #133047 !important;
+    background-color: #ffffff !important;
+}
+
+#controls span:hover {
     transition: 0.5s all ease;
     transform: scale(1.05);
 }
