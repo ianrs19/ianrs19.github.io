@@ -227,15 +227,15 @@ footer {
     gap: 30px;
 }
 
-#controls span{
+#controls span {
     width: 55px;
     font-weight: 600;
     border-radius: 1000px;
     padding: 10px;
-    background-color: white;
-    color: #3b4957;
+    background-color: #ffffff00;
+    color: #ffffff;
     cursor: pointer;
-    border: 3px solid #206bba;
+    border: 3px solid #ffffff;
     transition: 0.5s all ease;
     text-align: center;
 }
