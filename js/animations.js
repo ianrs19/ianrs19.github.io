@@ -73,7 +73,8 @@ const images2 = [
 ];
 
 const images3 = [
-  "/assets/img/us/ECONO.jpeg",
+  "/assets/img/us/ECON2.jpeg",
+  "/assets/img/us/ECON3.jpeg"
 ];
 
 let currentImageIndex1 = 0;
@@ -113,6 +114,6 @@ function changeImage3() {
   }, 800); // Cambia cada 5 segundos (5000ms)
 }
 
-setInterval(changeImage1, 7000); // Ejecuta la función cada 5 segundos (5000ms)
-setInterval(changeImage2, 7000); // Ejecuta la función cada 5 segundos (5000ms)
-setInterval(changeImage3, 7000); // Ejecuta la función cada 5 segundos (5000ms)
+setInterval(changeImage1, 4000); // Ejecuta la función cada 5 segundos (5000ms)
+setInterval(changeImage2, 4000); // Ejecuta la función cada 5 segundos (5000ms)
+setInterval(changeImage3, 4000); // Ejecuta la función cada 5 segundos (5000ms)
