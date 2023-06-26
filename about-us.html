@@ -27,7 +27,68 @@
     <link rel="stylesheet" href="/css/contacts.css">
     <link rel="stylesheet" href="/css/us.css">
 
+    <script>
 
+
+
+        const images1 = [
+            "/assets/img/us/AMBIENTE1.jpeg",
+            "/assets/img/us/AMBIENTE3.jpeg",
+            "/assets/img/bg/reciclaje.jpg",
+            "/assets/img/us/AMBIENTE2.jpeg"
+        ];
+
+        const images2 = [
+            "/assets/img/us/SOCIAL1.jpeg",
+            "/assets/img/us/SOCIAL2.jpeg"
+        ];
+
+        const images3 = [
+            "/assets/img/us/ECON2.jpeg",
+            "/assets/img/us/ECON3.jpeg"
+        ];
+
+        let currentImageIndex1 = 0;
+        let currentImageIndex2 = 0;
+        let currentImageIndex3 = 0;
+        const imageElement1 = document.querySelector("#ambient .amb-img");
+        const imageElement2 = document.querySelector("#social .amb-img");
+        const imageElement3 = document.querySelector("#economic .amb-img");
+
+        function changeImage1() {
+            imageElement1.classList.add("hidden");
+
+            setTimeout(function () {
+                currentImageIndex1 = (currentImageIndex1 + 1) % images1.length;
+                imageElement1.src = images1[currentImageIndex1];
+                imageElement1.classList.remove("hidden");
+            }, 800); // Cambia cada 5 segundos (5000ms)
+        }
+
+        function changeImage2() {
+            imageElement2.classList.add("hidden");
+
+            setTimeout(function () {
+                currentImageIndex2 = (currentImageIndex2 + 1) % images2.length;
+                imageElement2.src = images2[currentImageIndex2];
+                imageElement2.classList.remove("hidden");
+            }, 800); // Cambia cada 5 segundos (5000ms)
+        }
+
+        function changeImage3() {
+            imageElement3.classList.add("hidden");
+
+            setTimeout(function () {
+                currentImageIndex3 = (currentImageIndex3 + 1) % images3.length;
+                imageElement3.src = images3[currentImageIndex3];
+                imageElement3.classList.remove("hidden");
+            }, 800); // Cambia cada 5 segundos (5000ms)
+        }
+
+        setInterval(changeImage1, 4000); // Ejecuta la función cada 5 segundos (5000ms)
+        setInterval(changeImage2, 4000); // Ejecuta la función cada 5 segundos (5000ms)
+        setInterval(changeImage3, 4000); // Ejecuta la función cada 5 segundos (5000ms)
+    </script>
 
     <script>
         window.dataLayer = window.dataLayer || [];
